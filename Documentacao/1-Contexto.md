@@ -8,7 +8,7 @@ Outro problema muito comum na vida do estudante é a falta de interesse em busca
 
 Nas entrevistas, percebemos que o custo das aulas e o adicional do transporte também são uma barreira para muitos. Assim, a internet é ferramenta poderosa para tornar a educação mais acessível a todos. Também notamos que a falta de organização do estudante é um obstáculo para muitos jovens e que acaba comprometendo o rendimento e os resultados desse. 
 
----
+
 
 ## Objetivo do projeto 
 
@@ -16,13 +16,13 @@ Criar um site onde seja possível concentrar conteúdo seguro e de qualidade par
 
 A plataforma também indicaria conteúdos de organização e técnicas de estudo para otimizar o tempo dos alunos. Por fim, ofereceria um espaço do usuário com quadro kanban, para otimizar o tempo de estudo e organizar as atividades e afazeres do estudante. 
 
----
+
 
 ## Justificativa
 
 Embora crescente a disponibilidade de informações acessíveis a alunos e professores, é inegável a dificuldade de tais grupos para encontrar materiais de qualidade ou mesmo respostas específicas voltadas a problemas particulares. Neste cenário, a metodologia proposta no portal visa conjugar diversas ferramentas voltadas a suprir essa demanda.
 
----
+
 
 ## Público alvo
 
