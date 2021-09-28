@@ -2,7 +2,6 @@
 # Plataforma de estudos online
 
 * Centralização de matérias 
-* Espaço para resolução de dúvidas pontuais
 * Conteúdo seguro e de qualidade para alunos do EM e EF
 * Fontes de pesquisa confiáveis
 * Provas do ENEM e questões de vestibular
