@@ -1,20 +1,25 @@
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-f059dc9a6f8d3a56e377f745f24479a46679e63a5d9fe6f495e02850cd0d8118.svg)](https://classroom.github.com/online_ide?assignment_repo_id=452389&assignment_repo_type=GroupAssignmentRepo)
-# Nome do projeto
+# Plataforma de ensino digital
 
-Escreva um ou dois  parágrafo resumindo o objetivo do seu projeto.
+* Centralização de matérias 
+* Espaço para resolução de dúvidas pontuais
+* Conteúdo seguro e de qualidade para alunos do EM e EF
+* Fontes de pesquisa confiáveis
+* Provas do ENEM e questões de vestibular
+* Espaço com orientações de estudo e organização com o intuito de otimizar o tempo dos alunos e conciliar as atividades e afazeres do estudante.  
 
 ## Alunos integrantes da equipe
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+* Felipe Aguilar Santos Moura
+* Fernanda Mendes Gomes
+* Pablo Goulart Tosi
 
 ## Professores responsáveis
 
-* Nome completo do professor 1
-* Nome completo do professor 2
+* Rommel Vieira Carneiro
+* Rosilane Ribeiro da Mota
 
 ## Instruções de utilização
 
 Assim que a primeira versão do sistema estiver disponível, deverá complementar com as instruções de utilização. Descreva como instalar eventuais dependências e como executar a aplicação.
+
