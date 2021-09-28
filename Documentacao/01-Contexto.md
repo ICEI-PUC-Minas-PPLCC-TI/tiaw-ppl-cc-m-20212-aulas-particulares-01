@@ -13,7 +13,7 @@ Nas entrevistas realizadas pelo grupo, percebemos que o custo das aulas e o adic
 
 Criar um site no qual seja possível concentrar conteúdo seguro e de qualidade para alunos do Ensino Médio e Fundamental. A plataforma direciona o usuário para vídeos, sites e pdfs confiáveis, não só fornecendo material de reforço como também indicando fontes de pesquisa para o estudante, que teria certeza da procedência das informações. 
 
-A plataforma também disponibilizaria conteúdos de organização e técnicas de estudo para otimizar o tempo dos alunos, além de um espaço do usuário com quadro kanban. 
+A plataforma também disponibilizaria conteúdos de organização e técnicas de estudo para otimizar o tempo dos alunos. 
 
 
 ## Justificativa
