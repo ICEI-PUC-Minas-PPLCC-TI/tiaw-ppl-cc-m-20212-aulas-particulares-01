@@ -2,6 +2,8 @@
 
 ## Histórias de usuários
 
+Veja mais sobre as pesonas <a href="https://github.com/ICEI-PUC-Minas-PPLCC-TI/tiaw-ppl-cc-m-20212-aulas-particulares-01/blob/master/Documentacao/design_thinking/personas.md" target="_blank">aqui</a>
+
 | eu como [PERSONA] |                                                          quero/desejo [O QUE]                                                         |                                PRIORIDADE [POR QUE]                               |
 |:-----------------:|---------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
 | Marco             | saber estudar de forma mais efetiva e organizar seu tempo melhor                                                                      | quer conseguir conciliar o esporte e os estudos                                   |
