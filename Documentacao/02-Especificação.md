@@ -4,6 +4,8 @@
 
 Veja mais sobre as pesonas [aqui](https://github.com/ICEI-PUC-Minas-PPLCC-TI/tiaw-ppl-cc-m-20212-aulas-particulares-01/blob/master/Documentacao/design_thinking/personas.md)
 
+<br>
+
 | eu como [PERSONA] |                                                          quero/desejo [O QUE]                                                         |                                PRIORIDADE [POR QUE]                               |
 |:-----------------:|---------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
 | Marco             | saber estudar de forma mais efetiva e organizar seu tempo melhor                                                                      | quer conseguir conciliar o esporte e os estudos                                   |
@@ -18,8 +20,11 @@ Veja mais sobre as pesonas [aqui](https://github.com/ICEI-PUC-Minas-PPLCC-TI/tia
 | Maria             | maior conveniência, não ter que transportar os filhos para as aulas                                                                   | trabalha muito e não tem tempo                                                    |
 
 
+<br>
 
 ## Requisitos funcionais
+
+<br>
 
 |   ID  |                                                                   DESCRIÇÃO                                                                                    | PRIORIDADE  |
 |:-----:|--------------------------------------------------------------------------------------------------------------------------------------------------------------  |:------------:|
@@ -38,8 +43,11 @@ Veja mais sobre as pesonas [aqui](https://github.com/ICEI-PUC-Minas-PPLCC-TI/tia
 | RF-13 | Os vídeos mais visualizados (ou recomendados) aparecerão em um carrossel que terá destaque na aba da matéria                                                   | Alta         |
 
 
+<br>
 
 ## Requisitos não funcionais
+
+<br>
 
 |   ID   |                                             DESCRIÇÃO                                             | PRIORIDADE |
 |:------:|---------------------------------------------------------------------------------------------------|:----------:|
@@ -50,8 +58,11 @@ Veja mais sobre as pesonas [aqui](https://github.com/ICEI-PUC-Minas-PPLCC-TI/tia
 | RNF-05 | Desenvolvido em html, css e javascript                                                            | Alta       |
 
 
+<br>
 
 ## Restrições do projeto
+
+<br>
 
 | ID   | RESTRIÇÃO                                                    |
 |:----:|--------------------------------------------------------------|
