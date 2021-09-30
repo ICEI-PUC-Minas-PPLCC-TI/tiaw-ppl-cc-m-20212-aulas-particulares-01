@@ -2,7 +2,7 @@
 
 ## Histórias de usuários
 
-Veja mais sobre as pesonas <a href="https://github.com/ICEI-PUC-Minas-PPLCC-TI/tiaw-ppl-cc-m-20212-aulas-particulares-01/blob/master/Documentacao/design_thinking/personas.md"  target="_blank">aqui</a>
+Veja mais sobre as pesonas [aqui](https://github.com/ICEI-PUC-Minas-PPLCC-TI/tiaw-ppl-cc-m-20212-aulas-particulares-01/blob/master/Documentacao/design_thinking/personas.md)
 
 | eu como [PERSONA] |                                                          quero/desejo [O QUE]                                                         |                                PRIORIDADE [POR QUE]                               |
 |:-----------------:|---------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
