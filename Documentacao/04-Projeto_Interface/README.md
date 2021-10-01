@@ -17,4 +17,4 @@ Visão geral da interação do usuário pelas telas do sistema e protótipo inte
 <br>
 
 ## obs: imagens
-Contém as imagens utilizadas na criação dos arquivos .md
+Contém as imagens que foram apresentadas nos arquivos .md
