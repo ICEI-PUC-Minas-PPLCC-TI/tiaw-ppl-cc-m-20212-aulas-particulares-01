@@ -2,7 +2,7 @@
 
 ## Histórias de usuários
 
-Veja mais sobre as pesonas [aqui](https://github.com/ICEI-PUC-Minas-PPLCC-TI/tiaw-ppl-cc-m-20212-aulas-particulares-01/blob/master/Documentacao/design_thinking/personas.md)
+Veja mais sobre as pesonas [aqui](https://github.com/ICEI-PUC-Minas-PPLCC-TI/tiaw-ppl-cc-m-20212-aulas-particulares-01/blob/master/Documentacao/00-Design_Thinking/2.1-Empatia_Personas.md)
 
 <br>
 
