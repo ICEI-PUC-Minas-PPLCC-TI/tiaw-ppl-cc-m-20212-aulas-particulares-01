@@ -1,23 +1,24 @@
 # Documentação 
 
-## Artefatos do Design Thinking
+## 00 - Artefatos do Design Thinking
 
 Folder que contém os artefatos desenvolvidos no miro
-## Contexto 
+
+## 01 - Contexto 
 
   - Problema
   - Objetivo do Projeto
   - Justificativa
   - Público Alvo
 
-## Especificação do Projeto 
+## 02 - Especificação do Projeto 
 
   - Histórias de usuários
   - Requisitos funcionais
   - Requisitos não funcionais
   - Restrições do Projeto
 
-## Metodologia
+## 03 - Metodologia
 
   - Relação dos ambientes de trabalho
   - Gerenciamento de projeto
@@ -25,7 +26,7 @@ Folder que contém os artefatos desenvolvidos no miro
 
 
 
-## Projeto de Interface
+## 04 - Projeto de Interface
 
 Folder que contém o projeto de interface desenvolvido no figma
 
