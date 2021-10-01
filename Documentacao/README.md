@@ -2,27 +2,32 @@
 
 ## Artefatos do Design Thinking
 
-## 01. Contexto 
+Folder que contém os artefatos desenvolvidos no miro
+## Contexto 
 
   - Problema
   - Objetivo do Projeto
   - Justificativa
   - Público Alvo
 
-## 02. Especificação do Projeto 
+## Especificação do Projeto 
 
   - Histórias de usuários
   - Requisitos funcionais
   - Requisitos não funcionais
   - Restrições do Projeto
 
-## 03. Metodologia
+## Metodologia
 
   - Relação dos ambientes de trabalho
   - Gerenciamento de projeto
   - Gestão de código fonte
 
+
+
 ## Projeto de Interface
+
+Folder que contém o projeto de interface desenvolvido no figma
 
 
 
