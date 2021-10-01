@@ -31,6 +31,7 @@
     - Mural de possibilidades
     - Mapa de priorização
     - Mapa conceitual
+<br>
 
 ## obs: imagens
 Contém as imagens que foram apresentadas nos arquivos .md
