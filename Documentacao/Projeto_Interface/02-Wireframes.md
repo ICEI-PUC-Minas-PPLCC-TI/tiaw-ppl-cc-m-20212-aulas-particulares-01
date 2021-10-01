@@ -5,6 +5,8 @@ as telas do sistema são apresentadas em detalhes nos itens que se seguem.
 
 O protótipo interativo, onde é possível compreender melhor as páginas e a relação entre elas, pode ser visto [aqui](https://www.figma.com/proto/LuIool962Nh8OrpR43faEU/prototipo?node-id=2%3A269&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=2%3A269)
 
+<br>
+
 ## Página Inicial
 
 ![pagina_principal](https://user-images.githubusercontent.com/89420917/135542338-5c0d9f1f-e920-4792-adac-0aa7c65f8fab.png)
