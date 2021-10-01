@@ -32,6 +32,4 @@
     - Mapa de priorização
     - Mapa conceitual
 
-## OBS: Imagens
-Imagens utilizadas nos arquivos .md
  
