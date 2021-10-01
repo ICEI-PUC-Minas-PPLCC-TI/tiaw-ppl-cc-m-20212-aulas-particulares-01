@@ -13,3 +13,8 @@ Visão geral da interação do usuário pelas telas do sistema e protótipo inte
   
   - Wireframes das telas desenvolvidas no Figma
   - Protótipo interativo 
+
+<br>
+
+## obs: imagens
+Contém as imagens utilizadas na criação dos arquivos .md
