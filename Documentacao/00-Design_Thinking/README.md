@@ -33,6 +33,6 @@
     - Mapa conceitual
 
 ## obs: imagens
-Contém as imagens utilizadas na criação dos arquivos .md
+Contém as imagens que foram apresentadas nos arquivos .md
 
  
