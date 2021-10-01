@@ -5,6 +5,7 @@ Visão geral da interação do usuário pelas telas do sistema e protótipo inte
 <br>
 
 ## 01. Fluxo do usuário
+  - Fluxo de interação do usuário pelas telas do sistema
 
 <br>
 
