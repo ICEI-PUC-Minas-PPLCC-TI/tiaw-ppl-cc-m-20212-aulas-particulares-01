@@ -37,7 +37,7 @@ O protótipo interativo, onde é possível compreender melhor as páginas e a re
 
 ## Página - Organização e Estudo
 
-Ao passar o mouse pelos cards eles viram e mostram mais informações sobre o assunto
+Ao passar o mouse pelos cards eles viram e mostram mais informações sobre o assunto (pode ser visto no protótipo)
 
 ![pagina_estudarmaiseficiencia](https://user-images.githubusercontent.com/89420917/135542629-659e212a-94f0-405e-8c40-4f304dceced2.png)
 
