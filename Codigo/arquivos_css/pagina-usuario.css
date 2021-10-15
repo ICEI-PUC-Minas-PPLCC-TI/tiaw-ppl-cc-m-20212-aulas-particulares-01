@@ -113,6 +113,10 @@
     font-family: 'Montserrat';
 }
 
+.cursos a {
+    text-decoration: none;
+}
+
 
 /* PAGINATION */
 .page-link {
