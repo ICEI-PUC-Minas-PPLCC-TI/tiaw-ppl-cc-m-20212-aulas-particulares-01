@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" style="height:100%;"> <!-- style="height:100%;" makes the <html> tag take the whole space of the document. (FOOTER SEMPRE AO FIM DA PÁGINA) -->
 
   <head>
     <meta charset="UTF-8">
@@ -13,7 +13,10 @@
     <title>Página Usuário</title>
   </head>
 
-  <body>
+  <body class="d-flex flex-column min-vh-100"> 
+    <!-- class d-flex sets display:flex to our <body> tag (FOOTER SEMPRE AO FIM DA PÁGINA) -->
+    <!-- class flex-column sets flex-direction:column to our <body> tag. Its children (<header>, <main>, <footer> and any other direct child) are now aligned vertically (FOOTER SEMPRE AO FIM DA PÁGINA) -->
+    <!-- min-vh-100 ensures that the body element will stretch to at least the full height of the screen (FOOTER SEMPRE AO FIM DA PÁGINA) -->
     <header>
       <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
         <div class="container">
@@ -54,7 +57,7 @@
       </nav>
     </header>
 
-    <main class="container">
+    <main class="container flex-grow-1"> <!-- flex-grow-1 sets flex-grow:1 to our <main>, effectively instructing it to fill any remaining vertical space -->
       <section class="row pagina-perfil">
         <div class="col-12 col-sm-12 col-md-4 col-lg-2 perfil">
           <div class="container-perfil">
@@ -69,6 +72,36 @@
         </div>
         <div class="col-12 col-sm-12 col-md-8 col-lg-10 cursos">
           <h1>Cursos Salvos</h1>
+          <div class="container-curso">
+            <div class="container-curso-img">
+              <img src="imagens/perfil/placeholder.png" alt="">
+            </div>
+            <div class="container-curso-texto">
+              <h5>Nome Curso</h5>
+              <p><span>Matéria: xxxxxxxxxx</span></p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+          <div class="container-curso">
+            <div class="container-curso-img">
+              <img src="imagens/perfil/placeholder.png" alt="">
+            </div>
+            <div class="container-curso-texto">
+              <h5>Nome Curso</h5>
+              <p><span>Matéria: xxxxxxxxxx</span></p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+          <div class="container-curso">
+            <div class="container-curso-img">
+              <img src="imagens/perfil/placeholder.png" alt="">
+            </div>
+            <div class="container-curso-texto">
+              <h5>Nome Curso</h5>
+              <p><span>Matéria: xxxxxxxxxx</span></p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
           <div class="container-curso">
             <div class="container-curso-img">
               <img src="imagens/perfil/placeholder.png" alt="">

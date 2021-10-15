@@ -90,12 +90,13 @@ details > ul {
     }
 }
 
-.container-curso-texto h5 {
+.curso h5 {
     text-align: left;
     margin-top: 30px;
     margin-bottom: 5px;
     text-transform: none;
 }
+
 
 .curso p {
     padding-bottom: 30px;

@@ -69,6 +69,11 @@ p {
     padding-right: 10px !important;
 }
 
+.nav-link:hover,
+.nav-link:active {
+    color: #87c58f !important;
+}
+
 .dropdown-item {
     color: #0f5088 !important;
 }

@@ -94,3 +94,36 @@ form input {
     margin-right: auto;
     width: 150px !important;
 }
+
+/*-------------------------- CARDS -------------------------*/
+.card h5 {
+    color: #0f5088;
+}
+
+.card {
+    width: 80%;
+}
+
+.card img {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.card-text  {
+    margin-bottom: 15px !important;
+}
+
+@media screen and (max-width: 1199.9px) {
+    .card {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 767.9px) {
+
+    .row.vantagens {
+        display: none;
+    }
+}
