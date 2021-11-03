@@ -109,6 +109,18 @@ details > ul {
     }
 }
 
+@media screen and (max-width:1399.9px) and (min-width: 1199.9px)  {
+    .container-curso {
+        padding-bottom: 35px;
+    }
+}
+
+@media screen and (max-width:1200px) and (min-width: 992px)  {
+    .container-curso {
+        padding-bottom: 55px;
+    }
+}
+
 .container-curso-img {
     width: 20%;
     display: inline-block;
@@ -122,6 +134,7 @@ details > ul {
     width: 80%;
     float: right;
 }
+
 
 @media screen and (max-width: 991.9px) {
     .container-curso-img {
