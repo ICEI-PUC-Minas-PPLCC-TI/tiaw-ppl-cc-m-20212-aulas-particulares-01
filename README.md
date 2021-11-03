@@ -15,7 +15,6 @@
 ## Professores responsáveis
 
 * Rommel Vieira Carneiro
-* Rosilane Ribeiro da Mota
 
 ## Instruções de utilização
 
