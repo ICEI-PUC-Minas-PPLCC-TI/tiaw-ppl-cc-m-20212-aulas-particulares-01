@@ -91,7 +91,7 @@ details > ul {
 
 /* ------------------ CURSOS ------------------*/
 
-.container-curso {
+.container-curso a {
     padding: 20px;
     border: solid 1px #87c58f;
     border-radius: 10px;
@@ -99,6 +99,8 @@ details > ul {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
+    display: flex;
+    align-items: center;
 }
 
 @media screen and (max-width: 767.9px) {
@@ -109,42 +111,27 @@ details > ul {
     }
 }
 
-@media screen and (max-width:1399.9px) and (min-width: 1199.9px)  {
-    .container-curso {
-        padding-bottom: 35px;
-    }
+
+.container-curso img {
+    width: 30%;
 }
 
-@media screen and (max-width:1200px) and (min-width: 992px)  {
-    .container-curso {
-        padding-bottom: 55px;
-    }
+.container-texto {
+    margin-left: 25px;
+    text-align: justify;
 }
 
-.container-curso-img {
-    width: 20%;
-    display: inline-block;
-}
-
-.container-curso-img img {
-    width: 100%;
-}
-
-.container-curso-texto {
-    width: 80%;
-    float: right;
-}
 
 
 @media screen and (max-width: 991.9px) {
-    .container-curso-img {
+    .container-curso img {
         display: none;
     }
 
-    .container-curso-texto {
-        float: none;
+    .container-texto {
         display: block;
         width: 100%;
+        margin-left: 0;
     }
 }
 
@@ -152,13 +139,8 @@ details > ul {
 .cursos h5 {
     text-align: left;
     text-transform: uppercase;
-    margin-left: 25px;
 }
 
-.container-curso-texto p {
-    margin-left: 25px;
-    margin-top: 10px;
-}
 
 .cursos span {
     color: #87c58f;
@@ -168,6 +150,8 @@ details > ul {
 .cursos a {
     text-decoration: none;
 }
+
+
 
 /* PAGINATION */
 .page-link {

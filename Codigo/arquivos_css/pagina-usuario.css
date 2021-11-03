@@ -53,7 +53,7 @@
 
 /* ------------------ CURSOS ------------------*/
 
-.container-curso {
+.container-curso a {
     padding: 20px;
     border: solid 1px #87c58f;
     border-radius: 10px;
@@ -61,6 +61,8 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
+    display: flex;
+    align-items: center;
 }
 
 @media screen and (max-width: 767.9px) {
@@ -71,42 +73,36 @@
     }
 }
 
-.container-curso-img {
-    width: 20%;
-    display: inline-block;
+
+.container-curso img {
+    width: 30%;
 }
 
-.container-curso-img img {
-    width: 100%;
+.container-texto {
+    margin-left: 25px;
+    text-align: justify;
 }
 
-.container-curso-texto {
-    width: 80%;
-    float: right;
-}
+
 
 @media screen and (max-width: 991.9px) {
-    .container-curso-img {
+    .container-curso img {
         display: none;
     }
 
-    .container-curso-texto {
-        float: none;
+    .container-texto {
         display: block;
         width: 100%;
+        margin-left: 0;
     }
 }
+
 
 .cursos h5 {
     text-align: left;
     text-transform: uppercase;
-    margin-left: 25px;
 }
 
-.container-curso-texto p {
-    margin-left: 25px;
-    margin-top: 10px;
-}
 
 .cursos span {
     color: #87c58f;

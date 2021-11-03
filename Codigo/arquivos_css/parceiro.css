@@ -13,6 +13,8 @@
 
 .cadastro img {
     width: 80%;
+    display: block;
+    margin: 30px auto 0;
 }
 
 @media screen and (max-width: 991.9px) {

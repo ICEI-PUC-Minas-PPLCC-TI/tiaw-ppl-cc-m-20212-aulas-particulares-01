@@ -7,13 +7,10 @@
     padding-bottom: 0px;
 }
 
-.container-img {
-    margin-top: 30px;
-    text-align: center;
-}
-
 .cadastro img {
     width: 80%;
+    display: block;
+    margin: 30px auto 0;
 }
 
 .cadastro p {
@@ -122,7 +119,6 @@ form input {
 }
 
 @media screen and (max-width: 767.9px) {
-
     .row.vantagens {
         display: none;
     }
