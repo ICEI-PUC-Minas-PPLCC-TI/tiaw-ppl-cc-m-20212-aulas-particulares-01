@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-br" style="height:100%;"> <!-- style="height:100%;" makes the <html> tag take the whole space of the document. (FOOTER SEMPRE AO FIM DA PÁGINA) -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <title>Cadastro de Usuários</title>
+</head>
+
+<body onload="init()">
+
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+          <div class="container">
+            <a href="/index.html"><img class="navbar-brand" src="imagens/logo_nav.png" alt="logo simplinsino"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">matérias</a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">matemática</a></li>
+                    <li><a class="dropdown-item" href="#">biologia</a></li>
+                    <li><a class="dropdown-item" href="#">física</a></li>
+                    <li><a class="dropdown-item" href="#">química</a></li>
+                    <li><a class="dropdown-item" href="#">português</a></li>
+                    <li><a class="dropdown-item" href="#">história</a></li>
+                    <li><a class="dropdown-item" href="#">geografia</a></li>
+                    <li><a class="dropdown-item" href="#">inglês</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/provas.html">ENEM</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/organizacao.html">organização e estudo</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/parceiro.html">seja um parceiro</a>
+                </li>
+              </ul>
+              <span class="navbar-text">
+                <a class="btn cadastro" href="/cadastro.html">cadastre-se</a>
+                <a class="btn login" href="#">login</a>
+              </span>
+            </div>
+          </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="container formulario">
+                <h1>Cadastre-se</h1>
+
+                <div class="row">
+                    <div id="msg" class="col-sm-10 offset-sm-1 ">
+                        <!--<div class="alert alert-warning">cadastro não encontrado.</div>-->
+                    </div>
+                </div>
+
+                <form id="form-cadastro">
+
+                    <div class="form-group row justify-content-center">
+                        <div class="col-sm-1">
+                            <input type="text" class="form-control" id="inputId" placeholder="ID" disabled>
+                        </div>
+                    </div>
+
+                    <div class="form-group row justify-content-center">
+                        <div class="col-sm-5">
+                            <label for="inputNome">Nome:</label>
+                            <input type="text" class="form-control" id="inputNome" required>
+                        </div>
+                        <div class="col-sm-5">
+                            <label for="inputUsuario">Usuário:</label>
+                            <input type="text" class="form-control" id="inputUsuario" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group row justify-content-center">
+                        <div class="col-sm-5">
+                            <label for="inputEmail">E-mail:</label>
+                            <input type="email" class="form-control" id="inputEmail" required>
+                        </div>
+                        <div class="col-sm-5">
+                            <label for="inputCidade">Cidade:</label>
+                            <input type="text" class="form-control" id="inputCidade">
+                        </div>
+                    </div>
+
+                    <div class="form-group row justify-content-center">
+                        <div class="col-sm-5">
+                            <label for="inputPapel">Papel:</label>
+                            <input type="text" class="form-control" id="inputPapel" required>
+                        </div>    
+                        <div class="col-sm-5">
+                            <label for="inputTelefone">Telefone</label>
+                            <input type="text" class="form-control" id="inputTelefone" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group row justify-content-center top-buffer">
+                        <div class="col-sm-6">
+                            <input type="button" class="btn btn-success" id="btnInsert" value="Inserir">
+                            <input type="button" class="btn btn-warning" id="btnUpdate" value="Alterar">
+                            <input type="button" class="btn btn-danger" id="btnDelete" value="Excluir">
+                            <input type="button" class="btn btn-secondary" id="btnClear" value="Limpar Formulário">
+                        </div>
+                    </div>
+                </form>
+            </div>   
+            <div class="row">
+                <div class="col-sm-12">
+                    <table id="grid-cadastros" class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Nome</th>
+                                <th scope="col">Usuário</th>
+                                <th scope="col">E-mail</th>
+                                <th scope="col">Cidade</th>
+                                <th scope="col">Papel</th>
+                                <th scope="col">Telefone</th>
+                            </tr>
+                        </thead>
+                        <tbody id="table-cadastro">
+                            <tr>
+                                <td scope="row">1</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="app.js"></script>
+    <script>
+        function exibeCadastro() {
+            // Remove todas as linhas do corpo da tabela
+            $("#table-cadastro").html("");
+
+            // Popula a tabela com os registros do banco de dados
+            for (i = 0; i < db.data.length; i++) {
+                let cadastro = db.data[i];    
+                $("#table-cadastro").append(`<tr><td scope="row">${cadastro.id}</td>
+                                                <td>${cadastro.nome}</td>
+                                                <td>${cadastro.usuario}</td>
+                                                <td>${cadastro.email}</td>
+                                                <td>${cadastro.cidade}</td>
+                                                <td>${cadastro.papel}</td>
+                                                <td>${cadastro.telefone}</td>
+                                            </tr>`);
+            }
+        }
+
+        function init() {
+            // Adiciona funções para tratar os eventos 
+            $("#btnInsert").click(function () {
+                // Verfica se o formulário está preenchido corretamente
+                if (!$('#form-cadastro')[0].checkValidity()) {
+                    displayMessage("Preencha o formulário corretamente.");
+                    return;
+                }
+
+                // Obtem os valores dos campos do formulário
+                let campoNome = $("#inputNome").val();
+                let campoUsuario = $("#inputUsuario").val();
+                let campoEmail = $('#inputEmail').val();
+                let campoCidade = $("#inputCidade").val();
+                let campoPapel = $('#inputPapel').val();
+                let campoTelefone = $('#inputTelefone').val();
+                let cadastro = { nome: campoNome, 
+                    usuario: campoUsuario, 
+                    email: campoEmail, 
+                    cidade: campoCidade, 
+                    papel: campoPapel,
+                    telefone: campoTelefone };
+
+                insertCadastro(cadastro);
+
+                // Reexibe os cadastros
+                exibeCadastro();
+
+                // Limpa o formulario
+                $("#form-cadastro")[0].reset();
+            });
+
+            // Intercepta o click do botão Alterar
+            $("#btnUpdate").click(function () {
+                // Obtem os valores dos campos do formulário
+                let campoId = $("#inputId").val();
+                if (campoId == "") {
+                    displayMessage("Selecione um cadastro para ser alterado.");
+                    return;
+                }
+                let campoNome = $("#inputNome").val();
+                let campoUsuario = $("#inputUsuario").val();
+                let campoEmail = $("#inputEmail").val();
+                let campoCidade = $("#inputCidade").val();
+                let campoPapel = $("#inputPapel").val();
+                let campoTelefone = $('#inputTelefone').val();
+                let cadastro = { nome: campoNome, 
+                    usuario: campoUsuario, 
+                    email: campoEmail, 
+                    cidade: campoCidade, 
+                    papel: campoPapel,
+                    telefone: campoTelefone };
+
+                updateCadastro(parseInt(campoId), cadastro);
+
+                // Reexibe os cadastros
+                exibeCadastro();
+
+                // Limpa o formulario
+                $("#form-cadastro")[0].reset();
+            });
+
+            // Intercepta o click do botão Excluir
+            $("#btnDelete").click(function () {
+                let campoId = $("#inputId").val();
+                if (campoId == "") {
+                    displayMessage("Selecione um cadastro a ser excluído.");
+                    return;
+                }
+                deleteCadastro(parseInt(campoId));
+
+                // Reexibe os cadastros
+                exibeCadastro();
+
+                // Limpa o formulario
+                $("#form-cadastro")[0].reset();
+            });
+
+            // Oculta a mensagem de aviso após alguns segundos
+            $('#msg').bind("DOMSubtreeModified", function () {
+                window.setTimeout(function () {
+                    $(".alert").fadeTo(500, 0).slideUp(500, function () {
+                        $(this).remove();
+                    });
+                }, 5000);
+            });
+
+            // Preenche o formulário quando o usuario clicar em uma linha da tabela 
+            $("#grid-cadastro").on("click", "tr", function (e) {
+                let linhaCadastro = this;
+                colunas = linhaCadastro.querySelectorAll("td");
+
+                $("#inputId").val(colunas[0].innerText);
+                $("#inputNome").val(colunas[1].innerText);
+                $("#inputUsuario").val(colunas[2].innerText);
+                $("#inputEmail").val(colunas[3].innerText);
+                $("#inputCidade").val(colunas[4].innerText);
+                $("#inputPapel").val(colunas[5].innerText);
+                $("#inputTelefone").val(colunas[6].innerText);
+            });
+
+            exibeCadastro();
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</body>
+
+</html>
