@@ -11,9 +11,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
     <title>Nome da Disciplina</title>
+    <script src="pag-disciplina.js"></script>
   </head>
 
-  <body>
+  <body onload="carregaDisciplinas(); carregaListaSites (); carregaTitulo ();">
     <header>
       <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
         <div class="container">
@@ -24,15 +25,7 @@
           <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">disciplinas</a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a class="dropdown-item" href="disciplina.html">matemática</a></li>
-                  <li><a class="dropdown-item" href="disciplina.html">biologia</a></li>
-                  <li><a class="dropdown-item" href="disciplina.html">física</a></li>
-                  <li><a class="dropdown-item" href="disciplina.html">química</a></li>
-                  <li><a class="dropdown-item" href="disciplina.html">português</a></li>
-                  <li><a class="dropdown-item" href="disciplina.html">história</a></li>
-                  <li><a class="dropdown-item" href="disciplina.html">geografia</a></li>
-                  <li><a class="dropdown-item" href="disciplina.html">inglês</a></li>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" id="menu_disciplinas">
                 </ul>
               </li>
               <li class="nav-item">
@@ -56,14 +49,14 @@
 
     <main class="container">
       <section class="row cursos">
-        <h1>Nome da Disciplina</h1>
-        <div class="col-12 col-sm-12 col-md-8 col-lg-9">
+        <h1 id="titulo"></h1>
+        <div class="col-12 col-sm-12 col-md-8 col-lg-9" div="lista-cursos">
           <div class="container-curso">
             <a href="curso.html">
               <img src="imagens/placeholder.png" alt="">
               <div class="container-texto">
                 <h5>Nome Curso</h5>
-                <p><span>Disciplina: xxxxxxxxxx</span></p>
+                <p class="disciplina"><span>Disciplina: xxxxxxxxxx</span></p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
               </div>
             </a>
@@ -73,7 +66,7 @@
               <img src="imagens/placeholder.png" alt="">
               <div class="container-texto">
                 <h5>Nome Curso</h5>
-                <p><span>Disciplina: xxxxxxxxxx</span></p>
+                <p class="disciplina"><span>Disciplina: xxxxxxxxxx</span></p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
               </div>
             </a>
@@ -83,7 +76,7 @@
               <img src="imagens/placeholder.png" alt="">
               <div class="container-texto">
                 <h5>Nome Curso</h5>
-                <p><span>Disciplina: xxxxxxxxxx</span></p>
+                <p class="disciplina"><span>Disciplina: xxxxxxxxxx</span></p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
               </div>
             </a>
@@ -93,7 +86,7 @@
               <img src="imagens/placeholder.png" alt="">
               <div class="container-texto">
                 <h5>Nome Curso</h5>
-                <p><span>Disciplina: xxxxxxxxxx</span></p>
+                <p class="disciplina"><span>Disciplina: xxxxxxxxxx</span></p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
               </div>
             </a>
@@ -103,7 +96,7 @@
               <img src="imagens/placeholder.png" alt="">
               <div class="container-texto">
                 <h5>Nome Curso</h5>
-                <p><span>Disciplina: xxxxxxxxxx</span></p>
+                <p class="disciplina"><span>Disciplina: xxxxxxxxxx</span></p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
               </div>
             </a>
@@ -113,7 +106,7 @@
               <img src="imagens/placeholder.png" alt="">
               <div class="container-texto">
                 <h5>Nome Curso</h5>
-                <p><span>Disciplina: xxxxxxxxxx</span></p>
+                <p class="disciplina"><span>Disciplina: xxxxxxxxxx</span></p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
               </div>
             </a>
@@ -123,7 +116,7 @@
               <img src="imagens/placeholder.png" alt="">
               <div class="container-texto">
                 <h5>Nome Curso</h5>
-                <p><span>Disciplina: xxxxxxxxxx</span></p>
+                <p class="disciplina"><span>Disciplina: xxxxxxxxxx</span></p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
               </div>
             </a>
@@ -141,14 +134,9 @@
         <div class="col-12 col-sm-12 col-md-4 col-lg-3">
           <div class="menu-lateral ">
             <details open>
-              <summary><h6>mais sobre "Disciplina" aqui</h6></summary>
-              <ul>
-                <li><a href="#" target="_blank" class="btn">Site A</a></li>
-                <li><a href="#" target="_blank" class="btn">Site B</a></li>
-                <li><a href="#" target="_blank" class="btn">Site C</a></li>
-                <li><a href="#" target="_blank" class="btn">Site D</a></li>
-                <li><a href="#" target="_blank" class="btn">Site E</a></li>
-                <li><a href="#" target="_blank" class="btn">Site F</a></li>
+              <summary><h6>SAIBA MAIS AQUI:</h6></summary>
+              <ul id="lista-sites">
+                
               </ul>
               <div class="container-img">
                 <img src="imagens/disciplina/pesquisa.png" alt="">
