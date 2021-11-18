@@ -59,8 +59,8 @@ function carregaCursos () {
                 <img src="imagens/placeholder.png" alt="">
                 <div class="container-texto">
                     <h5>${curso.nomeCurso}</h5>
-                    <p class="disciplina"><span>Disciplina: ${db.disciplinas[id].titulo} </span></p>
-                    <p>${curso.descricao}</p>
+                    <p class="disciplina"><span>Disciplina:</span> ${db.disciplinas[id].titulo}</p>
+                    <p class="disciplina"><span>Descrição:</span> ${curso.descricao}</p>
                 </div>
                 </a>
           </li>`
