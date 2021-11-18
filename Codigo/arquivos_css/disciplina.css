@@ -91,6 +91,15 @@ details > ul {
 
 /* ------------------ CURSOS ------------------*/
 
+.cursos h1 {
+    margin-bottom: 0;
+    padding-bottom: 30px;
+}
+
+#lista_cursos {
+    list-style: none;
+}
+
 .container-curso a {
     padding: 20px;
     border: solid 1px #87c58f;
