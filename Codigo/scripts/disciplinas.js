@@ -56,7 +56,7 @@ function carregaCursos () {
             htmlStr +=
             `<li class="container-curso">
                 <a href="curso.html">
-                <img src="imagens/placeholder.png" alt="">
+                <img src="${curso.img}" alt="">
                 <div class="container-texto">
                     <h5>${curso.nomeCurso}</h5>
                     <p class="disciplina"><span>Disciplina:</span> ${db.disciplinas[id].titulo}</p>
