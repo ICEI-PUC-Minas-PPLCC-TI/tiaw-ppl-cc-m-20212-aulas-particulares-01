@@ -11,10 +11,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
     <title>Nome da Disciplina</title>
-    <script src="pag-disciplina.js"></script>
+    <script src="scripts/disciplinas.js"></script>
+    <script src="scripts/estruturas-dados.js"></script>
   </head>
 
-  <body onload="carregaDisciplinas(); carregaListaSites (); carregaTitulo ();">
+  <body class="d-flex flex-column min-vh-100" onload="carregaDisciplinas(); carregaListaSites (); carregaTitulo (); carregaCursos ();">
+    <!-- class d-flex sets display:flex to our <body> tag (FOOTER SEMPRE AO FIM DA PÁGINA) -->
+    <!-- class flex-column sets flex-direction:column to our <body> tag. Its children (<header>, <main>, <footer> and any other direct child) are now aligned vertically (FOOTER SEMPRE AO FIM DA PÁGINA) -->
+    <!-- min-vh-100 ensures that the body element will stretch to at least the full height of the screen (FOOTER SEMPRE AO FIM DA PÁGINA) -->
     <header>
       <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
         <div class="container">
@@ -47,89 +51,12 @@
       </nav>
     </header> 
 
-    <main class="container">
+    <main class="container flex-grow-1"> <!-- flex-grow-1 sets flex-grow:1 to our <main>, effectively instructing it to fill any remaining vertical space -->
       <section class="row cursos">
         <h1 id="titulo"></h1>
-        <div class="col-12 col-sm-12 col-md-8 col-lg-9" div="lista-cursos">
-          <div class="container-curso">
-            <a href="curso.html">
-              <img src="imagens/placeholder.png" alt="">
-              <div class="container-texto">
-                <h5>Nome Curso</h5>
-                <p class="disciplina"><span>Disciplina: xxxxxxxxxx</span></p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-              </div>
-            </a>
-          </div>
-          <div class="container-curso">
-            <a href="curso.html">
-              <img src="imagens/placeholder.png" alt="">
-              <div class="container-texto">
-                <h5>Nome Curso</h5>
-                <p class="disciplina"><span>Disciplina: xxxxxxxxxx</span></p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-              </div>
-            </a>
-          </div>
-          <div class="container-curso">
-            <a href="curso.html">
-              <img src="imagens/placeholder.png" alt="">
-              <div class="container-texto">
-                <h5>Nome Curso</h5>
-                <p class="disciplina"><span>Disciplina: xxxxxxxxxx</span></p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-              </div>
-            </a>
-          </div>
-          <div class="container-curso">
-            <a href="curso.html">
-              <img src="imagens/placeholder.png" alt="">
-              <div class="container-texto">
-                <h5>Nome Curso</h5>
-                <p class="disciplina"><span>Disciplina: xxxxxxxxxx</span></p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-              </div>
-            </a>
-          </div>
-          <div class="container-curso">
-            <a href="curso.html">
-              <img src="imagens/placeholder.png" alt="">
-              <div class="container-texto">
-                <h5>Nome Curso</h5>
-                <p class="disciplina"><span>Disciplina: xxxxxxxxxx</span></p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-              </div>
-            </a>
-          </div>
-          <div class="container-curso">
-            <a href="curso.html">
-              <img src="imagens/placeholder.png" alt="">
-              <div class="container-texto">
-                <h5>Nome Curso</h5>
-                <p class="disciplina"><span>Disciplina: xxxxxxxxxx</span></p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-              </div>
-            </a>
-          </div>
-          <div class="container-curso">
-            <a href="curso.html">
-              <img src="imagens/placeholder.png" alt="">
-              <div class="container-texto">
-                <h5>Nome Curso</h5>
-                <p class="disciplina"><span>Disciplina: xxxxxxxxxx</span></p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-              </div>
-            </a>
-          </div>
-          <nav aria-label="...">
-            <ul class="pagination justify-content-center">
-              <li class="page-item disabled"><a class="page-link">Previous</a></li>
-              <li class="page-item"><a class="page-link" href="#">1</a></li>
-              <li class="page-item active" aria-current="page"><a class="page-link" href="#">2</a></li>
-              <li class="page-item"><a class="page-link" href="#">3</a></li>
-              <li class="page-item"><a class="page-link" href="#">Next</a></li>
-            </ul>
-          </nav>
+        <div class="col-12 col-sm-12 col-md-8 col-lg-9">
+          <ul id="lista_cursos">
+          </ul>
         </div>
         <div class="col-12 col-sm-12 col-md-4 col-lg-3">
           <div class="menu-lateral ">
