@@ -162,16 +162,6 @@ details > ul {
 
 
 
-/* PAGINATION */
-.page-link {
-    color: #0f5088 !important;
-}
-
-.page-item.active .page-link {
-    background-color: #bed5dc;
-    border: solid 0.8px #bed5dc;
-    color: #0f5088;
-}
 
 
 
