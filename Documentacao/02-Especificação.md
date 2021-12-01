@@ -35,12 +35,11 @@ Veja mais sobre as pesonas [aqui](https://github.com/ICEI-PUC-Minas-PPLCC-TI/tia
 | RF-05 | Em cada matéria o usuário deve ser capaz de acessar vídeos, provas/questoes e links confiáveis e de fontes distintas para pesquisa e conteúdo extra            | Alta         |
 | RF-06 | No site também estarão disponíveis conteúdos que auxiliam o aluno a estudar e se organizar de forma mais eficiente                                             | Alta         |
 | RF-07 | Sistema kanban para a organização do estudante                                                                                                                 | Media        |
-| RF-08 | O site deve permitir que o usuário, quando logado,  crie e armazene cadernos de anotação                                                                       | Baixa        |
-| RF-09 | O site deve permitir que os moderadores e os professores parceiros adicionem material                                                                          | Alta         |
-| RF-10 | Pontuação para as melhores respostas nos quadros                                                                                                               | Baixa        |
-| RF-11 | Sistema de upvote e downvote de respostas                                                                                                                      | Baixa        |
-| RF-12 | Sistema de views (ou upvote e downvote) de vídeos                                                                                                              | Média        |
-| RF-13 | Os vídeos mais visualizados (ou recomendados) aparecerão em um carrossel que terá destaque na aba da matéria                                                   | Alta         |
+| RF-08 | O site deve permitir que os moderadores e os professores parceiros adicionem material                                                                          | Alta         |
+| RF-09 | Pontuação para as melhores respostas nos quadros                                                                                                               | Baixa        |
+| RF-10 | Sistema de upvote e downvote de respostas                                                                                                                      | Baixa        |
+| RF-11 | Sistema de views (ou upvote e downvote) de vídeos                                                                                                              | Baixa       |
+| RF-12 | Os vídeos mais visualizados (ou recomendados) aparecerão em um carrossel que terá destaque na aba da matéria                                                   | Baixa         |
 
 
 <br>
