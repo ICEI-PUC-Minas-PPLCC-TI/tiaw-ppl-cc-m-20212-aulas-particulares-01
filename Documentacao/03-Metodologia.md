@@ -41,3 +41,7 @@ Figura 02: Controle do código fonte
 - **Pablo Tosi:** Login 
 
 ## Processo
+
+Para dar início ao processo de concepção do projeto o Design Thinking foi fundamental. A partir desse método, estabelecemos toda a base do que viria a ser o Simplinsino. 
+Durante o desenvolvimento da plataforma, o grupo usou o GitHub como repositório do código fonte e o Google Drive para manter as apresentações, textos e tabelas desenvolvidos. A fim de criar o wireframe do template e o fluxo do usuário, foi utilizado o Figma. Finalmente, o grupo também se reuniu com frequência no Discord para discutir o que precisava produzir e o que já estava em andamento.
+
