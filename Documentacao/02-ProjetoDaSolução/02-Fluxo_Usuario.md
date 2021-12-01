@@ -8,5 +8,4 @@ Já o protótipo interativo pode ser visto [aqui](https://www.figma.com/proto/Lu
 
 <br>
 
-
-![fluxo usuário](https://user-images.githubusercontent.com/89420917/144293464-35065893-2dd5-4886-a44f-156d4231e020.png)
+![fluxo usuário(1)](https://user-images.githubusercontent.com/89420917/144294036-3db6c50c-185f-4ed7-be05-0f55b8e5940f.png)
