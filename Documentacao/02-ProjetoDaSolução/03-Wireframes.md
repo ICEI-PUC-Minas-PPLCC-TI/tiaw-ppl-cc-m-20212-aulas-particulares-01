@@ -63,9 +63,6 @@ Ao passar o mouse pelos cards eles viram e mostram mais informações sobre o as
 
 <br>
 
-## Página - Cursos Salvos pelo Usuário 
-
-![pagina_cursos_salvos](https://user-images.githubusercontent.com/89420917/135544098-e1287e50-de91-491e-84fa-04fc3aab85a2.png)
 
 <br>
 
