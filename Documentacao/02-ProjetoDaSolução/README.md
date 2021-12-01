@@ -23,5 +23,10 @@
 
 <br>
 
+## 04. Arquitetura da solução e tecnologias
+
+
+<br>
+
 ## obs: imagens
 Contém as imagens que foram apresentadas nos arquivos .md
