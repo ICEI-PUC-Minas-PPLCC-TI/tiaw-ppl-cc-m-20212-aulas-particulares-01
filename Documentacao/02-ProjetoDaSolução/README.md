@@ -1,15 +1,22 @@
-# Projeto de Interface
-
-Visão geral da interação do usuário pelas telas do sistema e protótipo interativo das telas com as funcionalidades que fazem parte do sistema 
+# Projeto da solução
 
 <br>
 
-## 01. Fluxo do usuário
+## 01. Especificação
+ - Histórias de usuários
+ - Requisitos funcionais
+ - Requisitos não funcionais
+ - Restrições do projeto
+
+
+<br>
+
+## 02. Fluxo do Usuário
   - Fluxo de interação do usuário pelas telas do sistema
 
 <br>
 
-## 02. Wireframes das telas
+## 03. Wireframes das telas
   
   - Wireframes das telas desenvolvidas no Figma
   - Protótipo interativo 
