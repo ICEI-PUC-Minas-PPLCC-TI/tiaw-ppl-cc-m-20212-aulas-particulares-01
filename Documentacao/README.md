@@ -27,6 +27,7 @@
   - Gerenciamento de projeto
   - Gestão de código fonte
   - Atribuições
+  - Processo
 
 
 
