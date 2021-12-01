@@ -1,6 +1,6 @@
 # Wireframes
 
-Conforme fluxo de telas do projeto, apresentado [anteriormente](https://github.com/ICEI-PUC-Minas-PPLCC-TI/tiaw-ppl-cc-m-20212-aulas-particulares-01/blob/master/Documentacao/02-ProjetoDaSolu%C3%A7%C3%A3o/02-Fluxo_Usuario.md), 
+Conforme fluxo de telas do projeto, apresentado [anteriormente](https://github.com/ICEI-PUC-Minas-PPLCC-TI/tiaw-ppl-cc-m-20212-aulas-particulares-01/blob/master/Documentacao/02-ProjetoDaSolu%C3%A7%C3%A3o/02-FluxoUsuario.md), 
 as telas do sistema são apresentadas em detalhes nos itens que se seguem. 
 
 O protótipo interativo, onde é possível compreender melhor as páginas e a relação entre elas, pode ser visto [aqui](https://www.figma.com/proto/LuIool962Nh8OrpR43faEU/prototipo?node-id=2%3A269&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=2%3A269)
