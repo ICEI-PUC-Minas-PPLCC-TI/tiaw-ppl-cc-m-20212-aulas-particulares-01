@@ -36,6 +36,6 @@
 
 ## 05 Testes de Software e Testes de Usabilidade
 
-- Testes funcionais a serem realizados no aplicativo
+- Testes funcionais realizados no aplicativo
 
 
