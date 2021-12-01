@@ -32,10 +32,10 @@
 
 ## 04 - Solução Implementada
 
-  - funcionalidades de software
+- Funcionalidades de software
 
 ## 05 Testes de Software e Testes de Usabilidade
 
-
+- Testes funcionais a serem realizados no aplicativo
 
 
