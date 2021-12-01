@@ -11,20 +11,24 @@ Nas entrevistas realizadas pelo grupo, percebemos que o custo das aulas e o adic
 
 ## Objetivo do projeto 
 
-Criar um site no qual seja possível concentrar conteúdo seguro e de qualidade para alunos do Ensino Médio e Fundamental. A plataforma direciona o usuário para vídeos, sites e pdfs confiáveis, não só fornecendo material de reforço como também indicando fontes de pesquisa para o estudante, que teria certeza da procedência das informações. 
+O objetivo do projeto Simplinsino é ser uma plataforma onde seja possível concentrar conteúdo seguro e de qualidade para alunos do Ensino Médio e Fundamental, que têm interesse em estudar sozinhos. 
 
-A plataforma também disponibilizaria conteúdos de organização e técnicas de estudo para otimizar o tempo dos alunos. 
+A plataforma direciona o usuário para vídeos, sites e pdfs confiáveis, não só fornecendo material de reforço como também indicando fontes de pesquisa para o estudante, que teria certeza da procedência das informações. Não somente isso,ela  também disponibilizaria conteúdos de organização e técnicas de estudo para otimizar o tempo dos alunos.
+
+Em suma, nosso objetivo é centralizar materiais de estudo e métodos de organização, a fim de pavimentar o caminho de um aluno independente que consegue converter suas horas de estudo em resultados. 
 
 
 ## Justificativa
 
-Embora crescente a disponibilidade de informações acessíveis a alunos e professores, é inegável a dificuldade de tais grupos para encontrar materiais de qualidade ou mesmo respostas específicas voltadas a problemas particulares. Neste cenário, a metodologia proposta no portal visa conjugar diversas ferramentas voltadas a suprir essa demanda.
+As plataformas de estudo online como a Khan Academy têm sua eficiência comprovada: “Os alunos que concluíram 60% ou mais do nível escolar em matemática na Khan Academy apresentaram uma evolução 1,8 vez maior que o esperado nessa matéria na avaliação de desenvolvimento MAP da NWEA, um teste amplamente usado.”. Entretanto, o que se encontra são plataformas onde o conteúdo é descentralizado, no Khan, são encontradas apenas as disciplinas matemática, economia e computação. No Simplinsino, o estudante encontra conteúdo das principais matérias do Ensino Médio/ Fundamental.
+Outra questão é o custo: muitos alunos que necessitam de aula particular ou reforço não tem condições de pagar pela aula, ou tem que fazer um grande esforço para pagá-las. Assim, a plataforma disponibiliza conteúdo exclusivamente gratuito, tornando a educação mais acessível.
+Por fim, uma vivência comum de escola é o desinteresse ou a falta de tempo para buscar informações em fontes confiáveis, recorrendo muitas vezes à Wikipédia. Dessa maneira, no Simplinsino é possível encontrar links de pesquisa separados por matéria onde se encontra conteúdo de procedência segura.
+
+KHAN ACADEMY. **Impacto**. 2015. Disponível em: <https://pt.khanacademy.org/about/impact/>. Acesso em: 01 dez. 2021.
+
 
 
 ## Público alvo
 
-- Alunos com dificuldade para aprender, tanto do ensino médio como do fundamental. Utilizando materiais para ajudá-los a estudar e acessar novas fontes. 
-
-- Alunos que precisam de otimizar o seu tempo de estudo, aumentando a produtividade e organizando melhor o seu tempo. 
-
-- Alunos com dificuldade/desinteresse para pesquisar e encontrar fontes confiáveis e seguras, onde as informações são verificadas. 
+O alvo deste trabalho está em alunos com dificuldade para aprender ou que necessitam de reforço, tanto do ensino médio como do fundamental. Também foca naqueles que precisam otimizar o seu tempo de estudo, aumentando a produtividade e organizando melhor  sua rotina. Ademais, se encontra em estudantes com dificuldade/desinteresse para pesquisar e encontrar fontes confiáveis e seguras, onde as informações são verificadas.
+Desta forma, o público-alvo consiste em adolescentes entre 12 e 19 anos que necessitam de reforço escolar ou estão estudando para o ENEM, já que a plataforma disponibiliza também conteúdo preparatório para o ENEM e é uma alternativa gratuita para aquele aluno que não tem condição de pagar um cursinho.
