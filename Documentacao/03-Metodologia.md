@@ -32,10 +32,12 @@ Figura 02: Controle do código fonte
 
 ## Atribuições
 
-### - Fernanda Mendes:  cadastro de tarefas, template, apresentação de informação (página da disciplina)
+- **Fernanda Mendes:**  cadastro de tarefas, template, apresentação de informação (página da disciplina)
 
 
-### - Felipe Moura: cadastro de usuário, apresentação de informação (página do curso)
+- **Felipe Moura:** cadastro de usuário, apresentação de informação (página do curso)
 
 
-### - Pablo Tosi: Login 
+- **Pablo Tosi:** Login 
+
+## Processo
