@@ -36,6 +36,7 @@
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">disciplinas</a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" id="menu_disciplinas">
+                      <!--preenchido dinamicamente-->
                   </ul>
                 </li>
                 <li class="nav-item">
@@ -59,7 +60,7 @@
  
     <main class="container flex-grow-1"> <!-- flex-grow-1 sets flex-grow:1 to our <main>, effectively instructing it to fill any remaining vertical space -->
         <section class="tarefas">
-            <h1 style="padding-bottom: 20px;">Meus estudos</h1>
+            <h1 style="padding-bottom: 0px;">Meus estudos</h1>
             <div class="container">
                 <div class="row">
                     <div id="msg" class="col-sm-10 offset-sm-1 ">
@@ -91,9 +92,9 @@
                     <div class="form-group row">
                         <div class="col-sm-12">
                             <div class="container-btns">
-                                <input type="button" class="btn btn-success" id="btnInsert" value="Inserir">
-                                <input type="button" class="btn btn-warning" id="btnUpdate" value="Alterar">
-                                <input type="button" class="btn btn-danger" id="btnDelete" value="Excluir">
+                                <input type="button" class="btn " id="btnInsert" value="Inserir">
+                                <input type="button" class="btn " id="btnUpdate" value="Alterar">
+                                <input type="button" class="btn " id="btnDelete" value="Excluir">
                             </div>
                         </div>
                     </div>
@@ -101,10 +102,8 @@
        
                 <div class="row">
                     <div class="col-sm-12">
-                        <ul id="table-tarefas" class="row d-inline-flex w-100 ml-2">
-                            <li>
- 
-                            </li>
+                        <ul id="table-tarefas" class="row">
+                            <!--preenchido no js -->
                         </ul>
                     </div>
                 </div>
@@ -127,13 +126,13 @@
  
             // Popula a tabela com os registros do banco de dados
             for (i = 0; i < dbTarefas.data.length; i++) {
-                let tarefa = dbTarefas.data[i];    
-                $("#table-tarefas").append(`<li class="col-6 col-sm-6 col-md-4 col-lg-3">
-                                                <div class="container-tarefa">
-                                                    
-                                                    <p>${tarefa.nome}</p>
-                                                    
-                                                    <input type = "checkbox" id = "tarefa-concluida" name = "tarefa-concluida" value = "newsletter">
+                let tarefa = dbTarefas.data[i];
+                $("#table-tarefas").append(`<li class="col-12 col-sm-12 col-md-4 col-lg-3">
+                                                <div class="container-tarefa h-100">
+                                                    <p hidden class="id-tarefa">${tarefa.id}</p>
+                                                    <p class="nome-tarefa">${tarefa.nome}</p>
+                                                    <p hidden class="prioridade-tarefa">${tarefa.prioridade}</p>
+                                                    <input type = "checkbox" class = "tarefa-concluida" name = "tarefa-concluida" value = "newsletter">
                                                     <label for = "tarefa-concluida">Tarefa concluída</label>
                                                 </div>
                                             </li>`);
@@ -213,12 +212,8 @@
                 // Limpa o formulario
                 $("#form-tarefa")[0].reset();
             });
- 
-            // // ///////////////////////////////////////
-           
-            //////////////////////////////////////////////
- 
- 
+
+
             // Oculta a mensagem de aviso após alguns segundos
             $('#msg').bind("DOMSubtreeModified", function () {
                 window.setTimeout(function () {
@@ -228,14 +223,24 @@
                 }, 5000);
             });
  
+
             // Preenche o formulário quando o usuario clicar em uma linha da tabela
             $("#table-tarefas").on("click", "li", function (e) {
-                let linhaTarefa = this;
-                colunas = linhaTarefa.querySelectorAll("td");
+                let tarefa = this;
+                let id = tarefa.querySelector(".id-tarefa").innerText
+                $("#inputId").val(id);
+                $("#inputNome").val(tarefa.querySelector(".nome-tarefa").innerText);
+                $("#inputPrioridade").val(tarefa.querySelector(".prioridade-tarefa").innerText);
+
+                let checkBox = tarefa.querySelector(".tarefa-concluida");
+                if (checkBox.checked == true) {
+                    deleteTarefa(parseInt(id));
+                    // Reexibe as tarefas
+                    exibeTarefas();
  
-                $("#inputId").val(colunas[0].innerText);
-                $("#inputNome").val(colunas[1].innerText);
-                $("#inputPrioridade").val(colunas[4].innerText);
+                    // Limpa o formulario
+                    $("#form-tarefa")[0].reset();
+                }
             });
  
             exibeTarefas();

@@ -2,14 +2,14 @@ label {
     font-weight: bolder;
 }
 ::placeholder {
-    color: lightskyblue !important;
+    color: #87c58f !important;
     opacity: 3;
 }
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-    color:  lightskyblue !important;
+    color:  #87c58f !important;
 }
 :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-    color:  lightskyblue !important;
+    color:  #87c58f !important;
     opacity:  3;
  }
 
@@ -48,13 +48,28 @@ label {
     margin-top: 30px;
     background-color: #f8f9fa;
     border-radius: 8px;
-    padding: 20px;
+    padding: 20px 20px 0px 20px;
 }
 
 .container-tarefa  p {
     padding-bottom: 10px;
 }
 
+
+
 #table-tarefas {
     list-style: none;
+}
+
+#form-tarefa {
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 477.9px) {
+    #btnDelete {
+        display: none;
+    }
 }

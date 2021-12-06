@@ -9,7 +9,7 @@ var db_tarefas_inicial = {
         {
             "id": 2,
             "nome": "Rever curso de trigonometria",
-            "prioridade": "Média",
+            "prioridade": "Baixa",
         },
         {
             "id": 3,
@@ -18,40 +18,10 @@ var db_tarefas_inicial = {
         },
         {
             "id": 4,
-            "nome": "Fazer as questões do enem 2020, dia 02",
-            "prioridade": "Alta",
-        },
-        {
-            "id": 5,
-            "nome": "Rever questões que errei no enem 2019",
-            "prioridade": "Alta",
-        },
-        {
-            "id": 6,
-            "nome": "Assistir curso de cinemática",
-            "prioridade": "Alta",
-        },
-        {
-            "id": 7,
-            "nome": "Escrever redação - tema a definir",
-            "prioridade": "Baixa",
-        },
-        {
-            "id": 8,
-            "nome": "Fazer exercícios de citologia",
-            "prioridade": "Média",
-        },
-        {
-            "id": 9,
-            "nome": "Fazer exercícios de química orgânica",
-            "prioridade": "Baixa",
-        },
-        {
-            "id": 10,
             "nome": "Assistir curso de  Química Geral",
             "prioridade": "Alta",
-        }
-    ]
+        },
+    ],
 }
 
 // Caso os dados já estejam no Local Storage, caso contrário, carrega os dados iniciais
