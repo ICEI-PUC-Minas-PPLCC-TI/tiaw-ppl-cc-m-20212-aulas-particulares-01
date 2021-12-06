@@ -28,6 +28,14 @@ section.row:nth-child(2) {
     padding-top: 10px;
 }
 
+.estudo {
+    background: #f8f9fa;
+    margin-top: 75px;
+    border-radius: 10px;
+    padding-top: 40px !important;
+    margin-bottom: 40px;
+}
+
 .estudo .btn,
 .organizacao .container-btn {
     margin-top: 25px;
