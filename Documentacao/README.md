@@ -33,6 +33,7 @@
 
 ## 04 - Solução Implementada
 
+- Template
 - Funcionalidades de software
 
 ## 05 Testes de Software e Testes de Usabilidade
