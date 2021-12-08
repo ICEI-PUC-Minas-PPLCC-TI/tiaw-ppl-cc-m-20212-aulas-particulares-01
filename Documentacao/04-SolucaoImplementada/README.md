@@ -4,6 +4,6 @@
 
 - Print e descrição das telas desenvolvidas para a plataforma Simplinsino
 
-## Funcionalidades do sistema
+## Funcionalidades 
 
-- Funcionalidades desenvolvidas pelos integrantes no Javascript e implementadas na plataforma
+- Funcionalidades do sistema desenvolvidas pelos integrantes no Javascript e implementadas na plataforma
