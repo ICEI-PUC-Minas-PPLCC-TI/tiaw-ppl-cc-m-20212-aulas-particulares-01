@@ -42,6 +42,8 @@ Veja mais sobre as pesonas [aqui](https://github.com/ICEI-PUC-Minas-PPLCC-TI/tia
 | RF-12 | Os vídeos mais visualizados (ou recomendados) aparecerão em um carrossel que terá destaque na aba da matéria                                                   | Baixa       
 | RF-13 | Permitir que o usuário salve cursos                                                                                                                            | Alta       |
 | RF-13 | Permitir que o usuário acompanhe seu progresso em cada curso                                                                                                   | Média      |
+| RF-14 | Dois cadastros obrigatórios                                                                                                                                    | Alta     |
+
 
 
 
