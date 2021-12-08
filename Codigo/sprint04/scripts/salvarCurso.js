@@ -3,7 +3,6 @@ var dbCursosSalvos = {
 };
 
 
-
 function getUrlVars() {
     var vars = {};
     var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi,
@@ -14,58 +13,58 @@ function getUrlVars() {
     return vars;
 }
 
-function salvarCurso () {
+function salvarCurso() {
     let idCurso = getUrlVars()["idCurso"];
-    let teste = 0;  
+    let teste = 0;
     let tmp = {};
     let dataSalvos;
 
     // checar se usuario ta logado
     //if (!usuarioCorrente.login) {
-        //window.location.href = LOGIN_URL;
+    //window.location.href = LOGIN_URL;
     //}
     //else {
-        dataSalvos = JSON.parse(localStorage.getItem("cursosSalvos"))
-        if (!dataSalvos) {
-            dataSalvos = dbCursosSalvos.salvos
+    dataSalvos = JSON.parse(localStorage.getItem("cursosSalvos"))
+    if (!dataSalvos) {
+        dataSalvos = dbCursosSalvos.salvos
+    }
+    for (i = 0; i < dataSalvos.length; i++) {
+        if (dataSalvos[i].idCurso == idCurso) {
+            teste = 1;
         }
-        for (i = 0; i < dataSalvos.length; i++) {
-            if (dataSalvos[i].idCurso == idCurso) {
-                teste = 1;
-            }
+    }
+    if (teste == 0) {
+        alert("Curso salvado com sucesso")
+        let curso = db.cursos[idCurso]
+        tmp = {
+            "idDisciplina": curso.idDisciplina,
+            "idCurso": idCurso,
+            "nomeCurso": curso.nomeCurso,
+            "descricao": curso.descricao,
+            "img": curso.img,
         }
-        if (teste == 0) {
-            alert("Curso salvado com sucesso")
-            let curso = db.cursos[idCurso]
-            tmp = {
-                "idDisciplina": curso.idDisciplina, 
-                "idCurso": idCurso,
-                "nomeCurso": curso.nomeCurso,
-                "descricao": curso.descricao,
-                "img": curso.img,
-            }
-            dataSalvos.push(tmp);
-        }
-        else {
-            alert("Você já salvou esse curso anteriormente")
-        }
+        dataSalvos.push(tmp);
+    }
+    else {
+        alert("Você já salvou esse curso anteriormente")
+    }
 
-        localStorage.setItem("cursosSalvos", JSON.stringify(dataSalvos))
+    localStorage.setItem("cursosSalvos", JSON.stringify(dataSalvos))
     //}
 }
 
 
 // carrega a lista de cursos salvos
-function carregaCursosSalvos () {
+function carregaCursosSalvos() {
     let containerCurso = document.getElementById('lista-cursos-salvos')
     let htmlStr = ''
     dataSalvos = JSON.parse(localStorage.getItem("cursosSalvos"))
     if (!dataSalvos) {
         dataSalvos = dbCursosSalvos.salvos
     }
-    for (i=0; i < dataSalvos.length ; i++) {
-            let curso = dataSalvos[i]
-            htmlStr +=
+    for (i = 0; i < dataSalvos.length; i++) {
+        let curso = dataSalvos[i]
+        htmlStr +=
             `<li class="container-curso">
                 <a href="curso.html?idCurso=${curso.idCurso}&id=0" class="col-lg-3">
                     <img src="${curso.img}" alt="">
@@ -80,12 +79,14 @@ function carregaCursosSalvos () {
     }
     containerCurso.innerHTML = htmlStr
 }
+
+
 // remover curso selecionado pelo usuario
 function removeCurso(index) {
     dataSalvos = JSON.parse(localStorage.getItem("cursosSalvos"))
 
-    dataSalvos.splice(index,1);
+    dataSalvos.splice(index, 1);
     localStorage.setItem("cursosSalvos", JSON.stringify(dataSalvos))
 
-    carregaCursosSalvos ()
+    carregaCursosSalvos()
 }
