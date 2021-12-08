@@ -34,13 +34,15 @@ Veja mais sobre as pesonas [aqui](https://github.com/ICEI-PUC-Minas-PPLCC-TI/tia
 | RF-04 | Funcionalidade de login                                                                                                                                        | Alta        |
 | RF-05 | Em cada matéria o usuário deve ser capaz de acessar vídeos, provas/questoes e links confiáveis e de fontes distintas para pesquisa e conteúdo extra            | Alta        |
 | RF-06 | No site também estarão disponíveis conteúdos que auxiliam o aluno a estudar e se organizar de forma mais eficiente                                             | Alta        |
-| RF-07 | Sistema kanban para a organização do estudante                                                                                                                 | Media        |
+| RF-07 | Quadro kanban / página para registro do que deve ser estudado, com diferenciação por prioridade                                                                | Media        |
 | RF-08 | O site deve permitir que os moderadores e os professores parceiros adicionem material                                                                          | Alta        |
 | RF-09 | Pontuação para as melhores respostas nos quadros                                                                                                               | Baixa        |
 | RF-10 | Sistema de upvote e downvote de respostas                                                                                                                      | Baixa        |
 | RF-11 | Sistema de views (ou upvote e downvote) de vídeos                                                                                                              | Baixa       |
 | RF-12 | Os vídeos mais visualizados (ou recomendados) aparecerão em um carrossel que terá destaque na aba da matéria                                                   | Baixa       
-| RF-13 | Quadro kanban / página para registro do que deve ser estudado, com diferenciação por prioridade                                                                | Média        
+| RF-13 | Permitir que o usuário salve cursos                                                                                                                            | Alta       |
+| RF-13 | Permitir que o usuário acompanhe seu progresso em cada curso                                                                                                   | Média      |
+
 
 
 <br>
