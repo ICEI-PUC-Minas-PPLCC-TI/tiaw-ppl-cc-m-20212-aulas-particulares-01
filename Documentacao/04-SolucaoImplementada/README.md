@@ -6,4 +6,4 @@
 
 ## Funcionalidades do sistema
 
-- Funcionalidades desenvolvidas no Javascript e implementadas na plataforma
+- Funcionalidades desenvolvidas pelos integrantes no Javascript e implementadas na plataforma
