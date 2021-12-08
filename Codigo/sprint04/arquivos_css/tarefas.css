@@ -44,7 +44,7 @@ label {
     margin-right: auto;
 }
 
-li {
+#table-tarefas li {
     margin-top: 30px !important
 }
 .container-tarefa {
