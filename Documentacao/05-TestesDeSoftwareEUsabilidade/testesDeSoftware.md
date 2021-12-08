@@ -1,4 +1,4 @@
-# Testes de software **-----------------INCOMPLETO-------------------**
+# Testes de software
 
 Requisitos para realização do teste:
 
