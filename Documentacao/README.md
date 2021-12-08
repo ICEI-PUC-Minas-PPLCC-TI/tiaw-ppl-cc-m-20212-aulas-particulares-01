@@ -17,7 +17,7 @@
   - Requisitos funcionais
   - Requisitos não funcionais
   - Restrições do Projeto
-  - Projeto de interface
+  - Projeto de interface (wireframes e protótipo)
 
 
 
