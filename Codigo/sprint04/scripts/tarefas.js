@@ -24,26 +24,29 @@ var db_tarefas_inicial = {
     ],
 }
 
+
 // Caso os dados já estejam no Local Storage, caso contrário, carrega os dados iniciais
 var dbTarefas = JSON.parse(localStorage.getItem('db_tarefa'));
 if (!dbTarefas) {
     dbTarefas = db_tarefas_inicial
 };
 
+
 // Exibe mensagem em um elemento de ID msg
 function displayMessage(msg) {
     $('#msg').html('<div class="alert alert-warning">' + msg + '</div>');
 }
 
+
 function insertTarefa(tarefa) {
     // Calcula novo Id a partir do último código existente no array (PODE GERAR ERRO SE A BASE ESTIVER VAZIA)
     let novoId = 1;
-    if (dbTarefas.data.length != 0) 
-      novoId = dbTarefas.data[dbTarefas.data.length - 1].id + 1;
+    if (dbTarefas.data.length != 0)
+        novoId = dbTarefas.data[dbTarefas.data.length - 1].id + 1;
     let novaTarefa = {
         "id": novoId,
         "nome": tarefa.nome,
-        "prioridade" : tarefa.prioridade,
+        "prioridade": tarefa.prioridade,
     };
 
     // Insere o novo objeto no array
@@ -53,6 +56,7 @@ function insertTarefa(tarefa) {
     // Atualiza os dados no Local Storage
     localStorage.setItem('db_tarefa', JSON.stringify(dbTarefas));
 }
+
 
 function updateTarefa(id, tarefa) {
     // Localiza o indice do objeto a ser alterado no array a partir do seu ID
@@ -69,7 +73,8 @@ function updateTarefa(id, tarefa) {
     localStorage.setItem('db_tarefa', JSON.stringify(dbTarefas));
 }
 
-function deleteTarefa(id) {    
+
+function deleteTarefa(id) {
     // Filtra o array removendo o elemento com o id passado
     dbTarefas.data = dbTarefas.data.filter(function (element) { return element.id != id });
 
