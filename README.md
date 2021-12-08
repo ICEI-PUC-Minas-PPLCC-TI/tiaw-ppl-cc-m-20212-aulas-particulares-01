@@ -10,7 +10,6 @@
 
 * Felipe Aguilar Santos Moura
 * Fernanda Mendes Gomes
-* Pablo Goulart Tosi
 
 ## Professores responsáveis
 
