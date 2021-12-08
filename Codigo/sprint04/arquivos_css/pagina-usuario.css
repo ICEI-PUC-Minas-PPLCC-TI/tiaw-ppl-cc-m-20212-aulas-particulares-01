@@ -53,7 +53,11 @@
 
 /* ------------------ CURSOS ------------------*/
 
-.container-curso a {
+#lista_cursos_salvos {
+    list-style: none;
+}
+
+.container-curso  {
     padding: 20px;
     border: solid 1px #87c58f;
     border-radius: 10px;
@@ -65,6 +69,8 @@
     align-items: center;
 }
 
+
+
 @media screen and (max-width: 767.9px) {
     .container-curso {
         margin-left: 0;
@@ -74,13 +80,34 @@
 }
 
 
+
 .container-curso img {
-    width: 30%;
+    width: 100%;
 }
 
 .container-texto {
     margin-left: 25px;
     text-align: justify;
+}
+
+button {
+    background-color: #fff;
+}
+
+
+button {
+    border: none;
+    margin-left: auto;
+    margin-right: 0%;
+}
+
+.btn-coracao {
+    color: rgb(255, 128, 96);
+    font-size: 25px;
+}
+
+.btn-coracao:hover {
+    color: rgb(202, 202, 202);
 }
 
 
