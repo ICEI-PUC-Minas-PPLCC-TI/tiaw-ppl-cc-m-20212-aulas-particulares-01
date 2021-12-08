@@ -44,11 +44,13 @@ label {
     margin-right: auto;
 }
 
+li {
+    margin-top: 30px !important
+}
 .container-tarefa {
-    margin-top: 30px;
     background-color: #f8f9fa;
     border-radius: 8px;
-    padding: 20px 20px 0px 20px;
+    padding: 20px 20px 20px 20px;
 }
 
 .container-tarefa  p {
