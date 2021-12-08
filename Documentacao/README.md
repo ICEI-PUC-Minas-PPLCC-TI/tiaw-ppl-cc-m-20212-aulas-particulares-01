@@ -34,7 +34,7 @@
 ## 04 - Solução Implementada
 
 - Template
-- Funcionalidades de software
+- Funcionalidades do sistema
 
 ## 05 Testes de Software e Testes de Usabilidade
 
