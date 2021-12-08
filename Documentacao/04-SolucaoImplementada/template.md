@@ -2,7 +2,7 @@
 
 **Aluna responsável:** Fernanda Mendes
 
-**Entregue no sprint 02**
+**Entregue no sprint 02** - [Link do código](https://replit.com/@FernandaMendes1/simplinsino?v=1)
 
 O padrão de layout a ser utilizado pelo site tem correspondência ao projeto de Interface elaborado anteriormente no figma e que pode ser visualizado [aqui](https://github.com/ICEI-PUC-Minas-PPLCC-TI/tiaw-ppl-cc-m-20212-aulas-particulares-01/blob/master/Documentacao/02-ProjetoDaSolu%C3%A7%C3%A3o/03-Wireframes.md)
 
