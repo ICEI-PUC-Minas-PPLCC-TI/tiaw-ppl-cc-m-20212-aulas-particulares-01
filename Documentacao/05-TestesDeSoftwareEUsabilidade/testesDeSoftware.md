@@ -1,4 +1,4 @@
-# Planos de teste de software **-----------------INCOMPLETO-------------------**
+# Testes de Software **-----------------INCOMPLETO-------------------**
 
 Requisitos para realização do teste:
 
