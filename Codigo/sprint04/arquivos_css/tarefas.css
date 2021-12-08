@@ -59,6 +59,7 @@ label {
 
 #table-tarefas {
     list-style: none;
+    padding-left: 0px;
 }
 
 #form-tarefa {
