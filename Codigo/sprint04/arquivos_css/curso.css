@@ -1,8 +1,27 @@
 /* ------------------ MENU LATERAL ------------------*/
 
-.voltar .btn  {
-    margin-top: 30px;
+.voltar  {
+    margin-top: 10px !important;
     width: 100%;
+}
+
+.salvar    {
+    width: 100%;
+    margin-top: 30px !important;
+    background-color: #87c58f;
+    color: #fff !important;
+    transition: background-color 0.2s;
+}
+
+
+
+@media screen and (max-width: 767.9px) {
+    .salvar, 
+    .voltar   {
+        width: 49%;
+        margin-top: 30px !important;
+        display: inline-block;
+    }
 }
 
 .menu-lateral h6 {
