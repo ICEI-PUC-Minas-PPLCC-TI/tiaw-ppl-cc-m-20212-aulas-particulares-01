@@ -10,6 +10,14 @@ main {
     }
 }
 
+main {
+    margin-top: 60px;
+}
+
+section:first-of-type{
+    padding-top: 0px !important;
+}
+
 section {
     padding-top: 40px;
     padding-bottom: 40px;
@@ -39,8 +47,11 @@ p {
     position: fixed;
     top: 0;
     width: 100%;
-  }
-
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+.modal {
+    z-index:2147483647;
+}
 
 .btn {
     border: 1px solid #87c58f;
@@ -89,9 +100,6 @@ p {
     color: #0f5088 !important;
 }
 
-.navbar {
-    border-bottom: solid 1px #ececec;
-}
 
 
 /*-------------------------- LOGIN -------------------------*/

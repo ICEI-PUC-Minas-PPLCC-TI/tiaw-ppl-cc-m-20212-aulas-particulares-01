@@ -69,7 +69,10 @@
     align-items: center;
 }
 
-
+.container-btn-titulo {
+    display: flex;
+    justify-content: space-between;
+}
 
 @media screen and (max-width: 767.9px) {
     .container-curso {
@@ -103,7 +106,7 @@ button {
 
 .btn-coracao {
     color: rgb(255, 128, 96);
-    font-size: 25px;
+    font-size: 24px;
 }
 
 .btn-coracao:hover {

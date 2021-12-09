@@ -10,13 +10,17 @@ main {
     }
 }
 
+main {
+    margin-top: 60px;
+}
+
+section:first-of-type{
+    padding-top: 0px !important;
+}
+
 section {
     padding-top: 40px;
     padding-bottom: 40px;
-}
-
-section:first-of-type {
-    padding-top: 35px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -31,19 +35,24 @@ h1, h2 {
 }
 
 p {
-    color: rgb(46, 46, 46);
+    color: rgb(39, 39, 39);
     margin-bottom: 0px;
 }
 
 
 /*-------------------------- NAV -------------------------*/
-.navbar {
-    padding-bottom: 0;
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+.modal {
+    z-index:2147483647;
 }
 
-.container-btn {
-    text-align: right !important;
-}
 .btn {
     border: 1px solid #87c58f;
     color: #87c58f !important;
@@ -91,9 +100,10 @@ p {
     color: #0f5088 !important;
 }
 
-.navbar {
-    border-bottom: solid 1px #ececec;
-}
+
+
+/*-------------------------- LOGIN -------------------------*/
+
 
 /*-------------------------- FOOTER -------------------------*/
 .footer {

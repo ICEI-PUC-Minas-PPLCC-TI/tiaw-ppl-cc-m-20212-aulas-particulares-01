@@ -34,7 +34,7 @@ function salvarCurso() {
         }
     }
     if (teste == 0) {
-        alert("Curso salvado com sucesso")
+        alert("Curso salvo com sucesso")
         let curso = db.cursos[idCurso]
         tmp = {
             "idDisciplina": curso.idDisciplina,
@@ -42,6 +42,7 @@ function salvarCurso() {
             "nomeCurso": curso.nomeCurso,
             "descricao": curso.descricao,
             "img": curso.img,
+            //"idUsuario":,
         }
         dataSalvos.push(tmp);
     }
@@ -70,8 +71,10 @@ function carregaCursosSalvos() {
                     <img src="${curso.img}" alt="">
                 </a>
                 <div class="container-texto">
-                    <button type="button" onclick="removeCurso(${i})"><ion-icon name="heart" class="btn-coracao"></ion-icon></button> 
-                    <h5>${curso.nomeCurso}</h5>
+                    <div class="container-btn-titulo"> 
+                        <h5>${curso.nomeCurso}</h5>
+                        <button type="button" onclick="removeCurso(${i})"><ion-icon name="heart" class="btn-coracao"></ion-icon></button>
+                    </div>
                     <p class="disciplina"><span>Disciplina:</span> ${db.disciplinas[curso.idDisciplina].titulo}</p>
                     <p class="disciplina"><span>Descrição:</span> ${curso.descricao}</p>
                 </div>
@@ -79,6 +82,7 @@ function carregaCursosSalvos() {
     }
     containerCurso.innerHTML = htmlStr
 }
+
 
 
 // remover curso selecionado pelo usuario

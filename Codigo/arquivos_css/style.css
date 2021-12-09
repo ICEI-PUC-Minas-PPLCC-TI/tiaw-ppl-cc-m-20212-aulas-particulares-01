@@ -34,9 +34,14 @@ p {
 
 /*-------------------------- NAV -------------------------*/
 
-.container-btn {
-    text-align: right !important;
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
+
+
 .btn {
     border: 1px solid #87c58f;
     color: #87c58f !important;
@@ -56,6 +61,11 @@ p {
     height: 40px;
     margin-right: 15px;
 }
+
+.dropdown-item:focus, .dropdown-item:hover {
+    background-color: #87c58f4b !important;
+}
+
 
 
 @media screen and (max-width: 991.9px) {
@@ -82,6 +92,10 @@ p {
 .navbar {
     border-bottom: solid 1px #ececec;
 }
+
+
+/*-------------------------- LOGIN -------------------------*/
+
 
 /*-------------------------- FOOTER -------------------------*/
 .footer {
