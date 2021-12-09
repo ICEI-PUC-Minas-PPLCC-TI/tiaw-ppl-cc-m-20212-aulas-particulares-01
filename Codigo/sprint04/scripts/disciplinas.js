@@ -43,7 +43,7 @@ function carregaTitulo() {
     let titulo_pag = db.disciplinas[id].titulo
     let htmlStr = ''
 
-    htmlStr += `<h1 id="titulo">${titulo_pag}</h1>`
+    htmlStr += `${titulo_pag}`
 
     titulo.innerHTML = htmlStr
     document.title = titulo_pag
