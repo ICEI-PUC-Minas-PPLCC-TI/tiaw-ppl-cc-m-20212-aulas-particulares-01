@@ -21,33 +21,26 @@ function carregaNomeCurso() {
     tituloCurso.innerHTML = htmlStr
 }
 
+function retornaNomeDisciplina() {
+    let idDisciplina = getUrlVars()["id"]
+    for (i = 0; i < db.disciplinas.length; i++) {
+        if (idDisciplina == db.disciplinas[i].id) {
+            let nomeDisciplina = db.disciplinas[i].titulo
+            return(nomeDisciplina)
+        }
+    }
+}
+
 
 function carregaNomeDisciplina() {
-    let tituloDisciplina = document.getElementById('nomeDisciplina')
+    //let tituloDisciplina = document.getElementById('nomeDisciplina')
     let btnVoltar = document.getElementById('btnVoltar')
-    let idCurso = getUrlVars()["idCurso"]
-    let idDisciplina = db.cursos[idCurso].idDisciplina
+    let nomeDisciplina = retornaNomeDisciplina()
+    let idDisciplina = getUrlVars()["id"]
 
-    for (i = 0; i < db.disciplinas.length; i++) {
-        if (idDisciplina == db.disciplinas[i].id) {
-            let nomeDisciplina = db.disciplinas[i].titulo
-            let htmlStr = ''
+    let htmlStr = `<a class="btn voltar" href="disciplina.html?id=${idDisciplina}">voltar para ${nomeDisciplina}</a>`
 
-            htmlStr += `<h4 id="nomeDisciplina">${nomeDisciplina}</h4>`
-
-            tituloDisciplina.innerHTML = htmlStr
-        }
-    }
-    for (i = 0; i < db.disciplinas.length; i++) {
-        if (idDisciplina == db.disciplinas[i].id) {
-            let nomeDisciplina = db.disciplinas[i].titulo
-            let htmlStr = ''
-
-            htmlStr += `<a class="btn voltar" href="disciplina.html?id=${db.disciplinas[i].id}">voltar para ${nomeDisciplina}</a>`
-
-            btnVoltar.innerHTML = htmlStr
-        }
-    }
+    btnVoltar.innerHTML = htmlStr
 }
 
 
@@ -56,6 +49,7 @@ function carregaConteudoCurso() {
     let idCurso = getUrlVars()["idCurso"]
     let id = getUrlVars()["id"]
     let video = db.cursos[idCurso].videos[id]
+    let nomeDisciplina = retornaNomeDisciplina()
     let htmlStr = ''
     htmlStr +=
         `<div class="container-curso-video">
@@ -63,6 +57,7 @@ function carregaConteudoCurso() {
             </div>
             <div class="container-curso-texto">
                 <h5>${video.nomeVideo}</h5>
+                <p><span>Disciplina: </span>${nomeDisciplina}</p>
                 <p><span>Descrição: </span>${video.descricaoVideo}</p>
           </div>`
 

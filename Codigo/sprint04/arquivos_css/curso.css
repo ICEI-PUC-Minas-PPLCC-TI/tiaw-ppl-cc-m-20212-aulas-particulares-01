@@ -94,13 +94,14 @@ details > ul {
 /* ------------------ CURSO ------------------*/
 
 .curso h1 {
-    padding-bottom: 5px;
+    padding-bottom: 15px !important;
     margin-bottom: 0;
 }
 
-.curso h4 {
+.curso h3 {
     color: #bed5dc;
     margin-bottom: 40px;
+    margin-top: 5px;
 }
 
 @media screen and (max-width:575.9px) {
@@ -111,14 +112,13 @@ details > ul {
 
 .curso h5 {
     text-align: left;
-    margin-top: 30px;
-    margin-bottom: 5px;
+    margin-top: 25px;
+    margin-bottom: 10px;
     text-transform: none;
 }
 
 
 .curso p {
-    padding-bottom: 30px;
     text-align: justify;
 }
 .curso span {
@@ -129,5 +129,14 @@ details > ul {
 .container-curso-video iframe {
     width: 100%;
     aspect-ratio: 16/9;
+}
+
+#nomeCurso {
+    padding-bottom: 0px;
+}
+
+body {
+    background-image: url(imagens\bg.png);
+    background-size: 300px 100px;
 }
 
