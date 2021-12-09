@@ -30,13 +30,14 @@ Página que abrange todas a visualização inicial do site
 
 Página onde o usuário pode escolher um curso ou acessar um link de pesquisa verificado
 
-![disciplina](https://user-images.githubusercontent.com/89420917/145126559-587aeffc-0f15-44cc-b0c6-dc2c32e48884.png)
+![disciplina](https://user-images.githubusercontent.com/89420917/145312228-57eaa37f-f204-443a-88b7-fa16f1fe7e2d.png)
 
 ## Página dos cursos
 
 Página na qual o usuário pode assistir as videoaulas do curso selecionado
 
-![curso](https://user-images.githubusercontent.com/89420917/145126581-5cc0c4d8-15c8-49a8-b212-101a5b5be3f3.png)
+![curso](https://user-images.githubusercontent.com/89420917/145311839-99b872d5-c427-4d36-8f51-db065a08b5a0.png)
+
 
 ## Página de provas do ENEM
 
