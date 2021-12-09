@@ -34,9 +34,14 @@ p {
 
 /*-------------------------- NAV -------------------------*/
 
-.container-btn {
-    text-align: right !important;
-}
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+
 .btn {
     border: 1px solid #87c58f;
     color: #87c58f !important;
