@@ -1,0 +1,3 @@
+esse login.js eh o do rommel ja adaptado pro nosso site. Tenho confianca deq qnd o popup tiver arrumado esse script vai rodar sem problemas
+
+o popup.js eh o codigo do w3, não estou usando ele pra mais nada. Soq la tem uma funcao q eu provavelmente vou usar pra trocar os btns dps q o usuario estiver logado
