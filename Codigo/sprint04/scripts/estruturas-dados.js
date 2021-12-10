@@ -190,6 +190,45 @@ var db = {
         },
     ],
 
+    cadastros: [
+        {
+            "id": 1,
+            "nome": "Arthur da Silva",
+            "senha": "senha123",
+            "papel": "professor",
+            "email": "profArthur@gmail.com",
+            "usuario": "Arturito123",
+            "confirmSenha": "senha123"
+        },
+        {
+            "id": 2,
+            "nome": "Clarice Soares",
+            "senha": "senha123",
+            "papel": "aluno",
+            "email": "Clarice123@outlook.com",
+            "usuario": "Clarice123",
+            "confirmSenha": "senha123"
+        },
+        {
+            "id": 3,
+            "nome": "Marco Oliveira",
+            "senha": "senha123",
+            "papel": "aluno",
+            "email": "Marco123@yahoo.com",
+            "usuario": "Marquinhos123",
+            "confirmSenha": "senha123"
+        },
+        {
+            "id": 4,
+            "nome": "Gabriel Monteiro",
+            "senha": "senha123",
+            "papel": "aluno",
+            "email": "Gabriel789@gmail.com",
+            "usuario": "Gabriel321",
+            "confirmSenha": "senha123"
+        },
+    ],
+
     cursos: [
         {
             "idDisciplina": "0",
@@ -646,8 +685,6 @@ var db = {
         },
     ]
 }
-
-
 
 /*
 {

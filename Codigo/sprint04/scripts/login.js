@@ -1,3 +1,5 @@
+
+
 //------------------------STICKY NAV-------------------------//
 
 // When the user scrolls the page, execute myFunction
@@ -18,13 +20,9 @@ function myFunction() {
     navbar.classList.remove("sticky");
   }
 }
-
-//--------------------------------------------------------//
-
-
 const LOGIN_URL = "login.html";
 
-var db_usuarios = db_cadastro_inicial;
+var db_cadastro = db.cadastros;
 var usuarioLogado = {};
 
 /* sepa n precisa disso
@@ -53,7 +51,7 @@ function initLoginApp () {
     }
     
 
-    var usuariosJSON = localStorage.getItem('db_usuarios');
+    var usuariosJSON = localStorage.getItem('db_cadastro');
 
     
     if (!usuariosJSON) {
@@ -62,20 +60,22 @@ function initLoginApp () {
         alert('Dados de usuários não encontrados no localStorage. \n -----> Fazendo carga inicial.');
 
         // Copia os dados iniciais para o banco de dados 
-        db_usuarios = db_cadastro_inicial;
+        db_cadastro = db.cadastros;
 
         // Salva os dados iniciais no local Storage convertendo-os para string antes
-        localStorage.setItem('db_usuarios', JSON.stringify (db_cadastro_inicial));
+        localStorage.setItem('db_cadastro', JSON.stringify (db.cadastros));
     }
     else  {
-        db_usuarios = JSON.parse(usuariosJSON);    
+        db_cadastro = JSON.parse(usuariosJSON);    
     }
 };
 
 function loginUser (usuario, senha) {
     
-    for (i = 0; i < db_usuarios.data.length; i++) {
-        var dadosUsuario = db_usuarios.data[i];
+    let dbUsuarios = JSON.parse(localStorage.getItem('db_cadastro'))
+    
+    for (i = 0; i < dbUsuarios.length; i++) {
+        var dadosUsuario = dbUsuarios[i];
         
         // Se encontrou login, carrega usuário corrente e salva no Session Storage
         if (usuario == dadosUsuario.usuario && senha == dadosUsuario.senha) {
@@ -102,7 +102,6 @@ function logoutUser () {
 initLoginApp ();
 
 function processaFormLogin (event) {                
-
     event.preventDefault ();
 
     
