@@ -10,6 +10,7 @@ A solução implementada conta com os seguintes módulos:
 - **Local Storage** - armazenamento mantido no Navegador, onde são implementados bancos de dados baseados em JSON. São eles: 
   - **Usuários** - registro de dados pessoais do usuário
   - **Tarefas** - uma forma de organização pessoal do que deve ser estudado
+  - **Cursos salvos** - cursos salvos pelo usuário 
 - **Estrutura de dados** - armazenamento baseado em JSON. São eles:
   - **Disciplinas** - registro dos dados de uma determinada disciplina
   - **Curso** - registro de dados de um determinado curso
