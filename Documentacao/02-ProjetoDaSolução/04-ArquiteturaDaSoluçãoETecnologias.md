@@ -2,7 +2,7 @@
 
 Os componentes que fazem parte da solução são apresentados na Figura a seguir:
 
-![arq-solucao](https://user-images.githubusercontent.com/89420917/144309950-fd9ac5d6-2bea-4f2c-9f14-b94bc46fbccb.png)
+![arq-solucao](https://user-images.githubusercontent.com/89420917/145648842-1d4ce2b3-342b-475c-86c4-7cd849deb0ea.png)
 
 A solução implementada conta com os seguintes módulos:
 - **Navegador** - Interface básica do sistema 
