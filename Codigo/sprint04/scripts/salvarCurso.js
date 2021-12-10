@@ -72,11 +72,13 @@ function carregaCursosSalvos() {
                 </a>
                 <div class="container-texto">
                     <div class="container-btn-titulo"> 
-                        <h5>${curso.nomeCurso}</h5>
+                        <a href="curso.html?idCurso=${curso.idCurso}&id=0"><h5>${curso.nomeCurso}</h5></a>
                         <button type="button" onclick="removeCurso(${i})"><ion-icon name="heart" class="btn-coracao"></ion-icon></button>
                     </div>
-                    <p class="disciplina"><span>Disciplina:</span> ${db.disciplinas[curso.idDisciplina].titulo}</p>
-                    <p class="disciplina"><span>Descrição:</span> ${curso.descricao}</p>
+                    <a href="curso.html?idCurso=${curso.idCurso}&id=0">
+                        <p class="disciplina"><span>Disciplina:</span> ${db.disciplinas[curso.idDisciplina].titulo}</p>
+                        <p class="disciplina"><span>Descrição:</span> ${curso.descricao}</p>
+                    </a>
                 </div>
             </li>`
     }
