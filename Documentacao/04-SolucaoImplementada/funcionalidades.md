@@ -64,5 +64,4 @@ Link do código:
 
 Funcionalidade que permite que o usuário salve cursos selecionados, que posteriormente são exibidos na página de cursos salvos pelo usuário
 
-![salvos](https://user-images.githubusercontent.com/89420917/145133455-6e81c6c9-fd46-400f-a92a-c55ee5f6cace.png)
-
+![csalvos](https://user-images.githubusercontent.com/89420917/145501588-7883a855-1672-4586-8913-e0bc059378e6.png)
