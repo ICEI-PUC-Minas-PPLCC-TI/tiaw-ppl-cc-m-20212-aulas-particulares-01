@@ -4,7 +4,7 @@
 
 **Entregue no sprint 02** - [Link do código](https://replit.com/@FernandaMendes1/simplinsino?v=1)
 
-O padrão de layout a ser utilizado pelo site tem correspondência ao projeto de Interface elaborado anteriormente no figma e que pode ser visualizado [aqui](https://github.com/ICEI-PUC-Minas-PPLCC-TI/tiaw-ppl-cc-m-20212-aulas-particulares-01/blob/master/Documentacao/02-ProjetoDaSolu%C3%A7%C3%A3o/03-Wireframes.md)
+O padrão de layout a ser utilizado pelo site tem correspondência ao projeto de Interface elaborado anteriormente no figma que pode ser visualizado [aqui](https://github.com/ICEI-PUC-Minas-PPLCC-TI/tiaw-ppl-cc-m-20212-aulas-particulares-01/blob/master/Documentacao/02-ProjetoDaSolu%C3%A7%C3%A3o/03-Wireframes.md)
 
 O template criado está disponível no site _______  e é composto pelos seguintes layouts: 
 - Tela principal
@@ -70,7 +70,8 @@ Página onde é possível fazer o cadastro de professores parceiros
 
 Página que exibe os cursos salvos pelo usuário
 
-![salvos](https://user-images.githubusercontent.com/89420917/145126751-11c9a76b-9a11-44b7-a9d7-4c429ed00258.png)
+![csalvos](https://user-images.githubusercontent.com/89420917/145501361-6c0c6e27-c40a-407b-a39b-7a4a02a31a65.png)
+
 
 
 ## Página "meus estudos"
