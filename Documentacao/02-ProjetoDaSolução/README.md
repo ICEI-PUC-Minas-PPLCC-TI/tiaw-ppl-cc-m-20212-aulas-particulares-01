@@ -25,6 +25,7 @@
 
 ## 04. Arquitetura da solução e tecnologias
 
+- módulos da solução implementada e tecnologias utilizadas
 
 <br>
 
