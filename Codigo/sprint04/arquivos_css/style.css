@@ -104,9 +104,6 @@ p {
 
 
 
-/*-------------------------- LOGIN -------------------------*/
-
-
 /*-------------------------- FOOTER -------------------------*/
 .footer {
     margin-top: 40px;
@@ -122,5 +119,66 @@ p {
     color: #fff;
 }
 
+/*-------------------------- MODAL -------------------------*/
 
+.btn.entrar {
+    width: 120px;
+    background-color: #87c58f;
+    color: #fff !important;
+}
 
+.btn.entrar:hover {
+    background-color: #fff;
+    border: #87c58f solid 1px;
+    color: #87c58f !important;
+}
+
+.modal label {
+    padding-top: 10px;
+}
+
+.modal form {
+    padding: 20px 40px 40px 40px !important;
+}
+
+.modal p {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.btn.linkCadastro {
+    margin-left: 5px;
+}
+/*
+<!-- Início Modal -->
+        <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="login-box" class="col-md-12">
+                        <form id="login-form" class="form" method="post" onsubmit="loginUser (this)">
+                            <h5 class="text-center modal-title" id="loginModalLabel">Login</h5>
+                            <div class="form-group">
+                                <label for="inputUsuario" class="form-label">Usuário:</label>
+                                <input type="text" class="form-control" id="loginUsuario">
+    
+                                <label for="inputPassword" class="form-label">Senha:</label>
+                                <input type="password" class="form-control" id="loginSenha">
+                                <!-- Nao terminei isso aqui, mas pode deixar isso e os btn de logoff, tarefa e salvar curso, q eu preciso de uma vitoria hj-->
+                                <p>Ainda não está cadastrado? Cadastre-se <a class="btn linkCadastro" href="cadastro.html">aqui</a></p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn cancelar" data-dismiss="modal">Cancelar</button>
+                    <button type="submit" name="submit" class="btn entrar">Entrar</button>
+                </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fim Modal -->
+*/
