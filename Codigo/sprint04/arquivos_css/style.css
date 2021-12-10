@@ -15,7 +15,7 @@ main {
 }
 
 section:first-of-type{
-    padding-top: 0px !important;
+    padding-top: 70px !important;
 }
 
 section {
@@ -44,10 +44,7 @@ p {
 
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
 .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.205);
     z-index:999;
 }
 
