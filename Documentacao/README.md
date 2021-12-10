@@ -1,4 +1,4 @@
-# Documentação 
+# Estrutura da Documentação 
 
 ## 00 - Artefatos do Design Thinking
 
