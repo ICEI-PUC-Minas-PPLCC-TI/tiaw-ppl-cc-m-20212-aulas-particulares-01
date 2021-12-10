@@ -22,6 +22,7 @@ A solução implementada conta com os seguintes módulos:
 No desenvolvimento do projeto as tecnologias utilizadas foram: 
 - Html
 - Css
+- Bootstrap 
 - JavaScript
 - JSON
 - jQuery
