@@ -56,7 +56,6 @@ function initLoginApp () {
     
     if (!usuariosJSON) {
         
-
         // Copia os dados iniciais para o banco de dados 
         db_cadastro = db.cadastros;
 
