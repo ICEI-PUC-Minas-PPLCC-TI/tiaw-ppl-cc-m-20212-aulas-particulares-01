@@ -87,12 +87,14 @@ form input {
     margin-bottom: 15px;
 }
 
-.cadastro button {
+.cadastro button,
+.btn-cadastro {
     margin-top: 15px;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: 0;
     width: 150px !important;
 }
+
 
 /*-------------------------- CARDS -------------------------*/
 .card h5 {

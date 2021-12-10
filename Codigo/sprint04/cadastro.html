@@ -10,13 +10,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
-    <title>Cadastre-se!</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="scripts/cadastro.js"></script>
     <script src="scripts/disciplinas.js"></script>
     <script src="scripts/estruturas-dados.js"></script>
-  
+    <script src="scripts/disciplinas.js"></script>
+    <script src="scripts/estruturas-dados.js"></script>
+    <title>Cadastre-se!</title>
   </head>
 
-  <body class="d-flex flex-column min-vh-100" onload="carregaDisciplinas()"> 
+  <body class="d-flex flex-column min-vh-100" onload="carregaDisciplinas(); init(); initCadastro();"> 
     <!-- class d-flex sets display:flex to our <body> tag (FOOTER SEMPRE AO FIM DA PÁGINA) -->
     <!-- class flex-column sets flex-direction:column to our <body> tag. Its children (<header>, <main>, <footer> and any other direct child) are now aligned vertically (FOOTER SEMPRE AO FIM DA PÁGINA) -->
     <!-- min-vh-100 ensures that the body element will stretch to at least the full height of the screen (FOOTER SEMPRE AO FIM DA PÁGINA) -->
@@ -57,24 +60,34 @@
       <section class="row cadastro">
         <div class="col-12 col-sm-12 col-md-6 col-lg-6 fundo esquerda">
           <h1>Vem com a gente!</h1>
+          <p class="texto-p">Faça parte da nossa plataforma! Ao se cadastrar você poderá salvar cursos no seu perfil e terá acesso à página de tarefas para você organizar seus estudos!</p>
           <img src="imagens/cadastro/cadastro_perfil.png" alt="">
         </div>
         <div class="col-12 col-sm-12 col-md-6 col-lg-6 fundo direita">
           <h4>alunos</h4>
-          <form class="row">
-            <label for="inputName" class="form-label">Nome de Usuário</label>
-            <input type="text" class="form-control" id="inputName">
+          <form class="row" id="form-cadastro" method="post">
+            
+            <input type="text" class="form-control" id="inputId" hidden disabled>
+            
+            <label for="inputNome" class="form-label">Nome Completo:</label>
+            <input type="text" class="form-control" id="inputNome">
 
-            <label for="InputEmail" class="form-label">Endereço de Email</label>
-            <input type="email" class="form-control" id="InputEmail">
+            <label for="inputUsuario" class="form-label">Nome de Usuário</label>
+            <input type="text" class="form-control" id="inputUsuario">
+
+            <label for="inputEmail" class="form-label">Endereço de Email</label>
+            <input type="email" class="form-control" id="inputEmail">
 
             <label for="inputPassword" class="form-label">Digite uma senha</label>
-            <input type="password" class="form-control" id="inputTel">
+            <input type="password" class="form-control" id="inputSenha">
 
             <label for="inputPassword" class="form-label">Confirme sua senha</label>
-            <input type="password" class="form-control" id="inputTel">
+            <input type="password" class="form-control" id="inputConfirmSenha">
             
-            <button type="submit" class="btn">cadastre-se</button>
+            <input type="text" class="form-control" id="inputPapel" value="aluno" hidden disabled>
+            
+            <input type="button" class="btn btn-cadastro" id="btnInsert" value="cadastre-se">
+            
           </form>
         </div>
       </section>
@@ -129,13 +142,15 @@
                           <label for="inputPassword" class="form-label">Senha:</label>
                           <input type="password" class="form-control" id="loginSenha">
                           <!-- Nao terminei isso aqui, mas pode deixar isso e os btn de logoff, tarefa e salvar curso, q eu preciso de uma vitoria hj-->
-                          <p>Ainda não está cadastrado? Cadastre-se <a class="btn linkCadastro" href="cadastro.html">aqui</a></p>
+                          <p>Ainda não está cadastrado?<a class="linkCadastro" href="cadastro.html"> Cadastre-se aqui</a></p>
+                          <div class="container-btn">
+                            <button type="submit" name="submit" class="btn entrar">Entrar</button>
+                          </div>
                       </div>
                   </form>
               </div>
           </div>
           <div class="modal-footer">
-              <button type="submit" name="submit" class="btn entrar">Entrar</button>
           </div>
           </div>
       </div>
@@ -143,6 +158,8 @@
     <!-- Fim Modal -->
 
     <script src="scripts/login.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
   </body>
 
