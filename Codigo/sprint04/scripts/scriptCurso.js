@@ -57,8 +57,8 @@ function carregaConteudoCurso() {
             </div>
             <div class="container-curso-texto">
                 <h5>${video.nomeVideo}</h5>
-                <p><span>Disciplina: </span>${nomeDisciplina}</p>
-                <p><span>Descrição: </span>${video.descricaoVideo}</p>
+                <p><span>&#8226; Disciplina: </span>${nomeDisciplina}</p>
+                <p><span>&#8226; Descrição: </span>${video.descricaoVideo}</p>
           </div>`
 
     containerConteudo.innerHTML = htmlStr
