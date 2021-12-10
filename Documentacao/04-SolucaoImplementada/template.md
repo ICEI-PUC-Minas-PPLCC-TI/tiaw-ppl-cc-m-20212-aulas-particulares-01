@@ -70,7 +70,8 @@ Página onde é possível fazer o cadastro de professores parceiros
 
 Página que exibe os cursos salvos pelo usuário
 
-![salvos](https://user-images.githubusercontent.com/89420917/145126751-11c9a76b-9a11-44b7-a9d7-4c429ed00258.png)
+![csalvos](https://user-images.githubusercontent.com/89420917/145501361-6c0c6e27-c40a-407b-a39b-7a4a02a31a65.png)
+
 
 
 ## Página "meus estudos"
