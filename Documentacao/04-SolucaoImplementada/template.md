@@ -14,6 +14,7 @@ O template criado está disponível no site _______  e é composto pelos seguint
 - Página de organização
 - Página de cadastro
 - Página de parceiros
+- Página de edição de perfil 
 - Página dos cursos salvos pelo usuário
 - Página "meus estudos"
 
@@ -64,6 +65,11 @@ Página onde é possível fazer o cadastro de alunos
 Página onde é possível fazer o cadastro de professores parceiros
 
 ![parceiro](https://user-images.githubusercontent.com/89420917/145126829-f67c6dcb-e7d1-48df-a2cb-0fa6919ffcbd.png)
+
+
+## Página de edição de perfil
+
+![edicao-perfil](https://user-images.githubusercontent.com/89420917/145648974-760483fe-f6a2-463d-8a2d-7cba283b201f.png)
 
 
 ## Página dos cursos salvos pelo usuário
