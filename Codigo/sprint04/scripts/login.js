@@ -56,8 +56,6 @@ function initLoginApp () {
     
     if (!usuariosJSON) {
         
-        
-        alert('Dados de usuários não encontrados no localStorage. \n -----> Fazendo carga inicial.');
 
         // Copia os dados iniciais para o banco de dados 
         db_cadastro = db.cadastros;
