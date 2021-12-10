@@ -73,7 +73,7 @@
               </ul>
             </details>
           </div>
-          <button class="btn salvar" id="btn-Salvar" onclick="salvarCurso ()">salvar curso</button>
+          <button class="btn salvar" id="btn-Salvar" onclick="salvarCurso ()" data-bs-toggle="modal" data-bs-target="#modalAlerta">salvar curso</button>
           <div  id="btnVoltar">
             <!-- preenchida dinamicamente -->
           </div>
@@ -112,6 +112,22 @@
               <button type="submit" name="submit" class="btn entrar">Entrar</button>
           </div>
           </div>
+      </div>
+    </div>
+    <!-- Fim Modal -->
+    <!-- Início Modal Alerta: É ALTERADO DE ACORDO COM O JS - curso ja foi salvado ou nao -->
+    <div class="modal fade" id="modalAlerta" aria-hidden="true" aria-labelledby="modalAlerta" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h6>curso já havia sido salvo!</h6>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
       </div>
     </div>
     <!-- Fim Modal -->

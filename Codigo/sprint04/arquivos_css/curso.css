@@ -136,3 +136,16 @@ details > ul {
 }
 
 
+/* ------------------ MODAL CURSO ------------------*/
+
+#modalAlerta h6 {
+    color: #0f5088;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#modalAlerta .btn-close {
+    height:fit-content;
+    
+    padding: 6px 1px;
+}

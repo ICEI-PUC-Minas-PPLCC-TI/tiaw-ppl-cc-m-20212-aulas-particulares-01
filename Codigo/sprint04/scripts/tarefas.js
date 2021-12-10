@@ -47,7 +47,7 @@ function insertTarefa(tarefa) {
         "id": novoId,
         "nome": tarefa.nome,
         "prioridade": tarefa.prioridade,
-        "idUsuario":,
+        //"idUsuario":,
     };
 
     // Insere o novo objeto no array

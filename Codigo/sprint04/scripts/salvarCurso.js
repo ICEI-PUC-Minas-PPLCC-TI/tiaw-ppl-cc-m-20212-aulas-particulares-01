@@ -18,6 +18,8 @@ function salvarCurso() {
     let teste = 0;
     let tmp = {};
     let dataSalvos;
+    let htmlStr = ''
+    let modal = document.getElementById('modalAlerta')
 
     // checar se usuario ta logado
     //if (!usuarioCorrente.login) {
@@ -34,7 +36,19 @@ function salvarCurso() {
         }
     }
     if (teste == 0) {
-        alert("Curso salvo com sucesso")
+        htmlStr = 
+            `<div class="modal-dialog modal-dialog-centered modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h6>curso salvado com sucesso!</h6>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>`
         let curso = db.cursos[idCurso]
         tmp = {
             "idDisciplina": curso.idDisciplina,
@@ -47,10 +61,23 @@ function salvarCurso() {
         dataSalvos.push(tmp);
     }
     else {
-        alert("Você já salvou esse curso anteriormente")
+        htmlStr = 
+            `<div class="modal-dialog modal-dialog-centered modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h6>esse curso já estava salvo!</h6>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>`
     }
+    modal.innerHTML = htmlStr;
 
-    localStorage.setItem("cursosSalvos", JSON.stringify(dataSalvos))
+    localStorage.setItem("cursosSalvos", JSON.stringify(dataSalvos));
     //}
 }
 
