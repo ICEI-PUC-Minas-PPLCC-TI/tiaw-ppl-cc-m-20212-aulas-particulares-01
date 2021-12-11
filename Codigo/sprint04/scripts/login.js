@@ -1,5 +1,3 @@
-
-
 //------------------------STICKY NAV-------------------------//
 
 // When the user scrolls the page, execute myFunction
@@ -93,12 +91,12 @@ function loginUser (usuario, senha) {
     return false;
 }
 
+
 function logoutUser () {
     usuarioLogado = {};
     sessionStorage.setItem ('usuarioLogado', JSON.stringify (usuarioLogado));
 }
-document.getElementById('btnLogoff').addEventListener('click', logoutUser);
-
+//document.getElementById('btnLogoff').addEventListener('click', logoutUser);
 
 initLoginApp ();
 
