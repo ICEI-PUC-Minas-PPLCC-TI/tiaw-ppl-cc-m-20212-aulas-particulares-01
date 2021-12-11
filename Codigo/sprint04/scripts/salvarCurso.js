@@ -2,13 +2,6 @@ var dbCursosSalvos = {
     salvos: [],
 };
 
-function checarLogin(){
-    let usuario = JSON.parse(sessionStorage.getItem('usuarioLogado'));
-    if (!usuario) {
-        window.location.href = 'index.html';
-    }
-}
-
 function getUrlVars() {
     var vars = {};
     var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi,
@@ -26,13 +19,14 @@ function salvarCurso() {
     let dataSalvos;
     let htmlStr = ''
     let modal = document.getElementById('modalAlerta')
+    let usuario = JSON.parse(sessionStorage.getItem('usuarioLogado'));
 
     dataSalvos = JSON.parse(localStorage.getItem("cursosSalvos"))
     if (!dataSalvos) {
         dataSalvos = dbCursosSalvos.salvos
     }
     for (i = 0; i < dataSalvos.length; i++) {
-        if (dataSalvos[i].idCurso == idCurso) {
+        if ((dataSalvos[i].idCurso == idCurso) && (usuario.id === dataSalvos[i].idUsuario)) {
             teste = 1;
         }
     }
@@ -57,7 +51,7 @@ function salvarCurso() {
             "nomeCurso": curso.nomeCurso,
             "descricao": curso.descricao,
             "img": curso.img,
-            //"idUsuario":,
+            "idUsuario": usuario.id,
         }
         dataSalvos.push(tmp);
     }
@@ -87,28 +81,33 @@ function salvarCurso() {
 function carregaCursosSalvos() {
     let containerCurso = document.getElementById('lista-cursos-salvos')
     let htmlStr = ''
+
+    let usuario = JSON.parse(sessionStorage.getItem('usuarioLogado'));
     dataSalvos = JSON.parse(localStorage.getItem("cursosSalvos"))
     if (!dataSalvos) {
         dataSalvos = dbCursosSalvos.salvos
     }
     for (i = 0; i < dataSalvos.length; i++) {
-        let curso = dataSalvos[i]
-        htmlStr +=
-            `<li class="container-curso">
-                <a href="curso.html?idCurso=${curso.idCurso}&id=0" class="col-lg-3">
-                    <img src="${curso.img}" alt="">
-                </a>
-                <div class="container-texto">
-                    <div class="container-btn-titulo"> 
-                        <a href="curso.html?idCurso=${curso.idCurso}&id=0"><h5>${curso.nomeCurso}</h5></a>
-                        <button type="button" onclick="removeCurso(${i})"><ion-icon name="heart" class="btn-coracao"></ion-icon></button>
-                    </div>
-                    <a href="curso.html?idCurso=${curso.idCurso}&id=0">
-                        <p class="disciplina"><span>Disciplina:</span> ${db.disciplinas[curso.idDisciplina].titulo}</p>
-                        <p class="disciplina"><span>Descrição:</span> ${curso.descricao}</p>
+        if (usuario.id == dataSalvos[i].idUsuario)
+        {
+            let curso = dataSalvos[i]
+            htmlStr +=
+                `<li class="container-curso">
+                    <a href="curso.html?idCurso=${curso.idCurso}&id=0" class="col-lg-3">
+                        <img src="${curso.img}" alt="">
                     </a>
-                </div>
-            </li>`
+                    <div class="container-texto">
+                        <div class="container-btn-titulo"> 
+                            <a href="curso.html?idCurso=${curso.idCurso}&id=0"><h5>${curso.nomeCurso}</h5></a>
+                            <button type="button" onclick="removeCurso(${i})"><ion-icon name="heart" class="btn-coracao"></ion-icon></button>
+                        </div>
+                        <a href="curso.html?idCurso=${curso.idCurso}&id=0">
+                            <p class="disciplina"><span>Disciplina:</span> ${db.disciplinas[curso.idDisciplina].titulo}</p>
+                            <p class="disciplina"><span>Descrição:</span> ${curso.descricao}</p>
+                        </a>
+                    </div>
+                </li>`
+        }
     }
     containerCurso.innerHTML = htmlStr
 }
