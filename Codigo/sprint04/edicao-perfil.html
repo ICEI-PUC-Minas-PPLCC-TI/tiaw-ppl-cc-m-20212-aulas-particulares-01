@@ -13,9 +13,10 @@
     <title>Meu perfil</title>
     <script src="scripts/disciplinas.js"></script>
     <script src="scripts/estruturas-dados.js"></script>
+    <script src="scripts/perfil.js"></script>
   </head>
 
-  <body class="d-flex flex-column min-vh-100" onload="carregaDisciplinas();checarLogin()">
+  <body class="d-flex flex-column min-vh-100" onload="carregaDisciplinas();checarLogin();preencheForm();">
     <!-- class d-flex sets display:flex to our <body> tag (FOOTER SEMPRE AO FIM DA PÁGINA) -->
     <!-- class flex-column sets flex-direction:column to our <body> tag. Its children (<header>, <main>, <footer> and any other direct child) are now aligned vertically (FOOTER SEMPRE AO FIM DA PÁGINA) -->
     <!-- min-vh-100 ensures that the body element will stretch to at least the full height of the screen (FOOTER SEMPRE AO FIM DA PÁGINA) -->
@@ -58,30 +59,13 @@
             <h1 class="text-center">editar meu perfil</h1>
             <div class="container-form">
                 <form id="form-cadastro" method="post">
-            
-                    <input type="text" class="form-control" id="inputId" hidden disabled>
-                    
-                    <label for="inputNome" class="form-label">Nome Completo:</label>
-                    <input type="text" class="form-control" id="inputNome">
-        
-                    <label for="inputUsuario" class="form-label">Nome de Usuário</label>
-                    <input type="text" class="form-control" id="inputUsuario">
-        
-                    <label for="inputEmail" class="form-label">Endereço de Email</label>
-                    <input type="email" class="form-control" id="inputEmail">
-        
-                    <label for="inputPassword" class="form-label">Digite uma senha</label>
-                    <input type="password" class="form-control" id="inputSenha">
-        
-                    <label for="inputPassword" class="form-label">Confirme sua senha</label>
-                    <input type="password" class="form-control" id="inputConfirmSenha">
-                    
-
+                  <div id="form-componentes">
+                    <!-- preenchido js -->
+                  </div>
                     <div class="btnHolder">
-                        <input type="button" class="btn btn-apagar" id="btnApagar" value="apagar meu perfil">
-                        <input type="button" class="btn btn-editar" id="btnEditar" value="salvar alterações">
-                      </div>
-                    
+                        <input type="button" class="btn btn-apagar" id="btnApagar" value="apagar meu perfil" onclick="apagarPerfil()">
+                        <input type="button" class="btn btn-editar" id="btnEditar" value="salvar alterações" onclick="salvarAlteracoes()">
+                    </div>
                   </form>
             </div>
         </div>
