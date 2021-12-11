@@ -96,8 +96,9 @@ function loginUser (usuario, senha) {
 function logoutUser () {
     usuarioLogado = {};
     sessionStorage.setItem ('usuarioLogado', JSON.stringify (usuarioLogado));
-    window.location = LOGIN_URL;
 }
+document.getElementById('btnLogoff').addEventListener('click', logoutUser);
+
 
 initLoginApp ();
 
