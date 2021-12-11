@@ -19,17 +19,21 @@ function salvarCurso() {
     let dataSalvos;
     let htmlStr = ''
     let modal = document.getElementById('modalAlerta')
+    // pagina so e acessada se o usuario estiver logado
+    // puxar dados do usuario para  salvar o curso associado ao id do usuario
     let usuario = JSON.parse(sessionStorage.getItem('usuarioLogado'));
 
     dataSalvos = JSON.parse(localStorage.getItem("cursosSalvos"))
     if (!dataSalvos) {
         dataSalvos = dbCursosSalvos.salvos
     }
+    // se o curso ja tiver sido salvo pelo usuario teste = 1
     for (i = 0; i < dataSalvos.length; i++) {
         if ((dataSalvos[i].idCurso == idCurso) && (usuario.id === dataSalvos[i].idUsuario)) {
             teste = 1;
         }
     }
+    // se o curso nao tiver sido salvado pelo usuario
     if (teste == 0) {
         htmlStr = 
             `<div class="modal-dialog modal-dialog-centered modal-sm">
@@ -55,6 +59,7 @@ function salvarCurso() {
         }
         dataSalvos.push(tmp);
     }
+    // se ja tiver sido salvado, nao salvar mais uma vez
     else {
         htmlStr = 
             `<div class="modal-dialog modal-dialog-centered modal-sm">
@@ -81,7 +86,7 @@ function salvarCurso() {
 function carregaCursosSalvos() {
     let containerCurso = document.getElementById('lista-cursos-salvos')
     let htmlStr = ''
-
+    // puxar dados do usuario para carregar os cursos salvos por AQUELE usuario
     let usuario = JSON.parse(sessionStorage.getItem('usuarioLogado'));
     dataSalvos = JSON.parse(localStorage.getItem("cursosSalvos"))
     if (!dataSalvos) {
