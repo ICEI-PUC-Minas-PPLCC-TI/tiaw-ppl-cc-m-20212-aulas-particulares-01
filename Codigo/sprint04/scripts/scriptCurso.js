@@ -21,22 +21,17 @@ function carregaNomeCurso() {
     tituloCurso.innerHTML = htmlStr
 }
 
-function retornaNomeDisciplina() {
-    let idDisciplina = getUrlVars()["id"]
-    for (i = 0; i < db.disciplinas.length; i++) {
-        if (idDisciplina == db.disciplinas[i].id) {
-            let nomeDisciplina = db.disciplinas[i].titulo
-            return(nomeDisciplina)
-        }
-    }
-}
+
 
 
 function carregaNomeDisciplina() {
     //let tituloDisciplina = document.getElementById('nomeDisciplina')
     let btnVoltar = document.getElementById('btnVoltar')
-    let nomeDisciplina = retornaNomeDisciplina()
-    let idDisciplina = getUrlVars()["id"]
+    let idCurso = getUrlVars()["idCurso"]
+
+    let disciplina = db.disciplinas.find(el => el.id === db.cursos[idCurso].idDisciplina);
+    let nomeDisciplina = disciplina["titulo"]
+    let idDisciplina = disciplina["id"]
 
     let htmlStr = `<a class="btn voltar" href="disciplina.html?id=${idDisciplina}">voltar para ${nomeDisciplina}</a>`
 
@@ -49,7 +44,10 @@ function carregaConteudoCurso() {
     let idCurso = getUrlVars()["idCurso"]
     let id = getUrlVars()["id"]
     let video = db.cursos[idCurso].videos[id]
-    let nomeDisciplina = retornaNomeDisciplina()
+
+    let disciplina = db.disciplinas.find(el => el.id === db.cursos[idCurso].idDisciplina);
+    let nomeDisciplina = disciplina["titulo"]
+    
     let htmlStr = ''
     htmlStr +=
         `<div class="container-curso-video">
