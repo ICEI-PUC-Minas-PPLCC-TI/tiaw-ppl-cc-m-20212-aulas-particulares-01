@@ -94,6 +94,8 @@ function loginUser (usuario, senha) {
 
 function logoutUser () {
     sessionStorage.removeItem ('usuarioLogado');
+    //usuarioLogado = {};
+    //sessionStorage.setItem ('usuarioLogado', JSON.stringify (usuarioLogado));
 }
 //document.getElementById('btnLogoff').addEventListener('click', logoutUser);
 
