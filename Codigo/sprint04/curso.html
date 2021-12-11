@@ -17,7 +17,7 @@
     <script src="scripts/salvarCurso.js"></script>
   </head>
 
-  <body class="d-flex flex-column min-vh-100" onload="carregaTitle(); carregaDisciplinas();  carregaNomeCurso(); carregaNomeDisciplina(); carregaConteudoCurso(); carregaMenuConteudo();"> 
+  <body class="d-flex flex-column min-vh-100" onload="carregaTitle(); carregaDisciplinas();  carregaNomeCurso(); carregaNomeDisciplina(); carregaConteudoCurso(); carregaMenuConteudo(); btnclick()"> 
     <!-- class d-flex sets display:flex to our <body> tag (FOOTER SEMPRE AO FIM DA PÁGINA) -->
     <!-- class flex-column sets flex-direction:column to our <body> tag. Its children (<header>, <main>, <footer> and any other direct child) are now aligned vertically (FOOTER SEMPRE AO FIM DA PÁGINA) -->
     <!-- min-vh-100 ensures that the body element will stretch to at least the full height of the screen (FOOTER SEMPRE AO FIM DA PÁGINA) -->
@@ -73,7 +73,7 @@
               </ul>
             </details>
           </div>
-          <button class="btn salvar" id="btn-Salvar" onclick="salvarCurso ()" data-bs-toggle="modal" data-bs-target="#modalAlerta">salvar curso</button>
+          <button class="btn salvar" id="btn-Salvar" data-bs-toggle="modal" data-bs-target="#modalAlerta">salvar curso</button>
           <div  id="btnVoltar">
             <!-- preenchida dinamicamente -->
           </div>

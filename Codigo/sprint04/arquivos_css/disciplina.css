@@ -100,7 +100,7 @@ details > ul {
     list-style: none;
 }
 
-.container-curso a {
+.container-curso  {
     padding: 20px;
     border: solid 1px #87c58f;
     border-radius: 10px;
@@ -112,6 +112,11 @@ details > ul {
     align-items: center;
 }
 
+.container-btn-titulo {
+    display: flex;
+    justify-content: space-between;
+}
+
 @media screen and (max-width: 767.9px) {
     .container-curso {
         margin-left: 0;
@@ -121,13 +126,34 @@ details > ul {
 }
 
 
+
 .container-curso img {
-    width: 170px;
+    width: 100%;
 }
 
 .container-texto {
     margin-left: 25px;
     text-align: justify;
+}s
+
+button {
+    background-color: #fff;
+}
+
+
+button {
+    border: none;
+    margin-left: auto;
+    margin-right: 0%;
+}
+
+.btn-coracao {
+    color: rgb(202, 202, 202);
+    font-size: 24px;
+}
+
+.btn-coracao:hover {
+    color: rgb(255, 128, 96);
 }
 
 

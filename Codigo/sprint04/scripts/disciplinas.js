@@ -59,18 +59,24 @@ function carregaCursos() {
         if (db.cursos[i].idDisciplina == id) {
             let curso = db.cursos[i]
             htmlStr +=
-                `<li class="container-curso">
-                <a href="curso.html?idCurso=${curso.idCurso}&id=0">
-                <img src="${curso.img}" alt="">
-                <div class="container-texto">
-                    <h5>${curso.nomeCurso}</h5>
-                    <p class="disciplina"><span>Disciplina:</span> ${db.disciplinas[id].titulo}</p>
-                    <p class="disciplina"><span>Descrição:</span> ${curso.descricao}</p>
-                </div>
+            `<li class="container-curso">
+                <a href="curso.html?idCurso=${curso.idCurso}&id=0" class="col-lg-3">
+                    <img src="${curso.img}" alt="">
                 </a>
-          </li>`
+                <div class="container-texto">
+                    <div class="container-btn-titulo"> 
+                        <a href="curso.html?idCurso=${curso.idCurso}&id=0"><h5>${curso.nomeCurso}</h5></a>
+                        <button type="button" onclick="salvarCurso(${curso.idCurso})" data-bs-toggle="modal" data-bs-target="#modalAlerta"><ion-icon name="heart" class="btn-coracao"></ion-icon></button>
+                    </div>
+                    <a href="curso.html?idCurso=${curso.idCurso}&id=0">
+                        <p class="disciplina"><span>Disciplina:</span> ${db.disciplinas[curso.idDisciplina].titulo}</p>
+                        <p class="disciplina"><span>Descrição:</span> ${curso.descricao}</p>
+                    </a>
+                </div>
+            </li>`
         }
     }
+    //<button class="btn salvar" id="btn-Salvar" data-bs-toggle="modal" data-bs-target="#modalAlerta">salvar curso</button>
     containerCurso.innerHTML = htmlStr
 }
 

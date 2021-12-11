@@ -12,8 +12,8 @@ function getUrlVars() {
     return vars;
 }
 
-function salvarCurso() {
-    let idCurso = getUrlVars()["idCurso"];
+
+function salvarCurso(idCurso) {
     let teste = 0;
     let tmp = {};
     let dataSalvos;
@@ -78,7 +78,11 @@ function salvarCurso() {
     modal.innerHTML = htmlStr;
 
     localStorage.setItem("cursosSalvos", JSON.stringify(dataSalvos));
-    //}
+}
+
+function btnclick() {
+    let btnSalvar = document.getElementById('btn-Salvar')
+    btnSalvar.onclick = salvarCurso(getUrlVars()["idCurso"])
 }
 
 
