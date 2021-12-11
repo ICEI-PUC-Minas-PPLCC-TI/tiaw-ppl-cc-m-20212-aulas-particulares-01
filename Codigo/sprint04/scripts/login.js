@@ -93,8 +93,7 @@ function loginUser (usuario, senha) {
 
 
 function logoutUser () {
-    usuarioLogado = {};
-    sessionStorage.setItem ('usuarioLogado', JSON.stringify (usuarioLogado));
+    sessionStorage.removeItem ('usuarioLogado');
 }
 //document.getElementById('btnLogoff').addEventListener('click', logoutUser);
 
@@ -110,7 +109,7 @@ function processaFormLogin (event) {
     
     resultadoLogin = loginUser (username, password);
     if (resultadoLogin) {
-        document.location.reload();
+        window.location.reload();
     }
     else {
         alert ('Usuário ou senha incorretos');
