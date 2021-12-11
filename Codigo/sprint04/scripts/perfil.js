@@ -24,17 +24,18 @@ function preencheForm() {
 
 
 function apagarPerfil() {
-    alert("oi")
+    // FALTA: alerta: certeza que quer apagar o perfil? se sim proceder e apagar
     let usuario = JSON.parse(sessionStorage.getItem('usuarioLogado'));
     let id = usuario.id
     let dbCadastro = JSON.parse(localStorage.getItem('db_cadastro'));
-
+    // apagar perfil do local storage
     dbCadastro = dbCadastro.filter(function (element) { return element.id != id });
     // Atualiza os dados no Local Storage
     localStorage.setItem('db_cadastro', JSON.stringify(dbCadastro));
 
-    //Atualiza dados no session storage
+    //Deslogar usuario
     sessionStorage.removeItem ('usuarioLogado');
+    // redirecionar para a pagina inicial
     window.location.href = 'index.html';
 }
 
