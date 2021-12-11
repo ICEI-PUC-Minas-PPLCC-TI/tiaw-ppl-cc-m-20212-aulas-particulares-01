@@ -35,7 +35,9 @@ Figura 02: Controle do código fonte
 - **Fernanda Mendes:**  cadastro de tarefas, template, apresentação de informação (página da disciplina), apresentação de informação (salvar e exibir cursos)
 
 
-- **Felipe Moura:** cadastro de usuário, apresentação de informação (página do curso), login
+- **Felipe Moura:** cadastro de usuário, apresentação de informação (página do curso), edição de perfil
+
+- **Pablo Tosi:** login
 
 
 
