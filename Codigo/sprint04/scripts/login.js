@@ -111,7 +111,7 @@ function processaFormLogin (event) {
     
     resultadoLogin = loginUser (username, password);
     if (resultadoLogin) {
-        window.location.href = 'index.html';
+        document.location.reload();
     }
     else {
         alert ('Usuário ou senha incorretos');
