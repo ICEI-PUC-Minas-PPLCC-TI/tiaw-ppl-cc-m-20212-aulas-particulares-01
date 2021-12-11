@@ -119,3 +119,10 @@ function processaFormLogin (event) {
 }
 
 document.getElementById ('login-form').addEventListener ('submit', processaFormLogin);
+
+function checarLogin(){
+    let usuario = JSON.parse(sessionStorage.getItem('usuarioLogado'));
+    if (!usuario) {
+        window.location.href = 'index.html';
+    }
+}

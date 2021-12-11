@@ -2,6 +2,12 @@ var dbCursosSalvos = {
     salvos: [],
 };
 
+function checarLogin(){
+    let usuario = JSON.parse(sessionStorage.getItem('usuarioLogado'));
+    if (!usuario) {
+        window.location.href = 'index.html';
+    }
+}
 
 function getUrlVars() {
     var vars = {};
@@ -21,11 +27,6 @@ function salvarCurso() {
     let htmlStr = ''
     let modal = document.getElementById('modalAlerta')
 
-    // checar se usuario ta logado
-    //if (!usuarioCorrente.login) {
-    //window.location.href = LOGIN_URL;
-    //}
-    //else {
     dataSalvos = JSON.parse(localStorage.getItem("cursosSalvos"))
     if (!dataSalvos) {
         dataSalvos = dbCursosSalvos.salvos
