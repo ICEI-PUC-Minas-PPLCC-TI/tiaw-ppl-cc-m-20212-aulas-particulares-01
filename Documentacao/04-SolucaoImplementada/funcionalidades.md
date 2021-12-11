@@ -39,7 +39,7 @@ Funcionalidade que permite a visualização dos cursos e dos links indicados por
 
 ## Entrega Sprint 4 - Login do Sistema
 
-Aluno responsável: Felipe Moura
+Aluno responsável: Pablo Tosi
 
 Link do código: http:///
 
@@ -65,3 +65,15 @@ Link do código:
 Funcionalidade que permite que o usuário salve cursos selecionados, que posteriormente são exibidos na página de cursos salvos pelo usuário
 
 ![csalvos](https://user-images.githubusercontent.com/89420917/145501588-7883a855-1672-4586-8913-e0bc059378e6.png)
+
+## Entrega Sprint 4 - Edição de perfil
+
+Aluno responsável: Felipe Moura
+
+Link do código: 
+
+Funcionalidade que permite que o usuário edite os dados do seu perfil
+
+![edicao-perfil](https://user-images.githubusercontent.com/89420917/145683211-d1bbaacc-a561-4aaf-aa1f-260d072d9602.png)
+
+
