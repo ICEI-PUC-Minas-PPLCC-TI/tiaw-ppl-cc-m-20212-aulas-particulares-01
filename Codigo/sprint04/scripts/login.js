@@ -20,6 +20,9 @@ function myFunction() {
     navbar.classList.remove("sticky");
   }
 }
+
+// ------------------------------------------------------------//
+
 const LOGIN_URL = "login.html";
 
 var db_cadastro = db.cadastros;
