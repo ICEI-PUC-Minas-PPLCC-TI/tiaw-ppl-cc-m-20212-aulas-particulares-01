@@ -6,6 +6,7 @@ function initCadastro(){
     
     if(!dbCadastro){
         localStorage.setItem('db_cadastro', JSON.stringify(db.cadastros))
+        document.location.reload();
     } 
 }
 

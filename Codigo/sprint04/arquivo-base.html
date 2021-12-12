@@ -15,14 +15,14 @@
     <script src="scripts/estruturas-dados.js"></script>
   </head>
 
-  <body class="d-flex flex-column min-vh-100" onload="carregaDisciplinas()">
+  <body class="d-flex flex-column min-vh-100" onload="carregaDisciplinas(); trocaBotoes()">
     <!-- class d-flex sets display:flex to our <body> tag (FOOTER SEMPRE AO FIM DA PÁGINA) -->
     <!-- class flex-column sets flex-direction:column to our <body> tag. Its children (<header>, <main>, <footer> and any other direct child) are now aligned vertically (FOOTER SEMPRE AO FIM DA PÁGINA) -->
     <!-- min-vh-100 ensures that the body element will stretch to at least the full height of the screen (FOOTER SEMPRE AO FIM DA PÁGINA) -->
     <header>
       <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" id="navbar">
         <div class="container">
-          <a href="/index.html"><img class="navbar-brand" src="imagens/logo_nav.png" alt="logo simplinsino"></a>
+          <a href="index.html"><img class="navbar-brand" src="imagens/logo_nav.png" alt="logo simplinsino"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -33,19 +33,30 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/provas.html">ENEM</a>
+                <a class="nav-link" href="provas.html">ENEM</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/organizacao.html">organização e estudo</a>
+                <a class="nav-link" href="organizacao.html">organização e estudo</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/parceiro.html">seja um parceiro</a>
+                <a class="nav-link" href="parceiro.html">seja um parceiro</a>
               </li>
             </ul>
-            <div class="navbar-text btns-preLogin">
+            <div class="navbar-text" id="btns-naoLogado">
               <a class="btn cadastro" href="cadastro.html">cadastre-se</a>
               <!-- Modal -->
-              <button type="button" class="btn login" data-bs-toggle="modal" data-bs-target="#loginModal">login</button>
+              <button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#loginModal">login</button>
+            </div>
+            <div class="dropdown" id="btns-Logado">
+              <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                nome do manin
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="meus-cursos.html">Meus Cursos</a></li>
+                <li><a class="dropdown-item" href="tarefas.html">Minhas Tarefas</a></li>
+                <li><a class="dropdown-item" href="edicao-perfil.html">Editar Meu Perfil</a></li>
+                <li><button class="dropdown-item" href="#" id="btnLogoff" onclick="LogoutUser()">Fazer Log off</button></li>
+              </ul>
             </div>
           </div>
         </div>

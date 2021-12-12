@@ -21,28 +21,9 @@ function myFunction() {
 
 // ------------------------------------------------------------//
 
-const LOGIN_URL = "login.html";
 
 var db_cadastro = db.cadastros;
 var usuarioLogado = {};
-
-/* sepa n precisa disso
-function generateUUID() { // Public Domain/MIT
-    var d = new Date().getTime();//Timestamp
-    var d2 = (performance && performance.now && (performance.now()*1000)) || 0;//Time in microseconds since page-load or 0 if unsupported
-    return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
-        var r = Math.random() * 16;//random number between 0 and 16
-        if(d > 0){//Use timestamp until depleted
-            r = (d + r)%16 | 0;
-            d = Math.floor(d/16);
-        } else {//Use microseconds since page-load if supported
-            r = (d2 + r)%16 | 0;
-            d2 = Math.floor(d2/16);
-        }
-        return (c === 'x' ? r : (r & 0x3 | 0x8)).toString(16);
-    });
-}
-*/
 
 function initLoginApp () {
     
@@ -62,6 +43,8 @@ function initLoginApp () {
 
         // Salva os dados iniciais no local Storage convertendo-os para string antes
         localStorage.setItem('db_cadastro', JSON.stringify (db.cadastros));
+        
+        document.location.reload();
     }
     else  {
         db_cadastro = JSON.parse(usuariosJSON);    
@@ -91,13 +74,41 @@ function loginUser (usuario, senha) {
     return false;
 }
 
+function trocaBotoes(){
+    let dbUsuarios = JSON.parse(sessionStorage.getItem('usuarioLogado'))
+    let btnsLogado = document.getElementById("btns-Logado");
+    let btnsNaoLogado = document.getElementById("btns-naoLogado");
 
-function logoutUser () {
-    sessionStorage.removeItem ('usuarioLogado');
-    //usuarioLogado = {};
-    //sessionStorage.setItem ('usuarioLogado', JSON.stringify (usuarioLogado));
+    if(sessionStorage.length == 0){
+        btnsLogado.style.display = "none";
+    }
+    else{
+        btnsNaoLogado.style.display = "none";
+        let htmlStr = ''
+
+        htmlStr +=
+            `
+            <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        ${dbUsuarios.nome}
+                      </button>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="meus-cursos.html">Meus Cursos</a></li>
+                        <li><a class="dropdown-item" href="tarefas.html">Minhas Tarefas</a></li>
+                        <li><a class="dropdown-item" href="edicao-perfil.html">Editar Meu Perfil</a></li>
+                        <li><button class="dropdown-item" href="#" id="btnLogoff" onclick="LogoutUser()">Fazer Log off</button></li>
+                      </ul>
+            `
+        btnsLogado.innerHTML = htmlStr
+    }                 
+
 }
-//document.getElementById('btnLogoff').addEventListener('click', logoutUser);
+
+function LogoutUser(){
+    sessionStorage.removeItem ('usuarioLogado');
+    alert('Log off concluido')
+    document.location.reload();
+    
+}
 
 initLoginApp ();
 
