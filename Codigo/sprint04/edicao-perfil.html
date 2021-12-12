@@ -50,10 +50,10 @@
             </div>
             <div class="dropdown" id="btns-Logado">
               <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                nome do manin
+                nome do usuario
               </button>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                <li><a class="dropdown-item" href="meus-cursos.html">Meus Cursos</a></li>
+                <li><a class="dropdown-item" href="meus-cursos.html">meus cursos</a></li>
                 <li><a class="dropdown-item" href="tarefas.html">Minhas Tarefas</a></li>
                 <li><a class="dropdown-item" href="edicao-perfil.html">Editar Meu Perfil</a></li>
                 <li><button class="dropdown-item" href="#" id="btnLogoff" onclick="LogoutUser()">Fazer Log off</button></li>
@@ -104,7 +104,6 @@
   
                               <label for="inputPassword" class="form-label">Senha:</label>
                               <input type="password" class="form-control" id="loginSenha">
-                              <!-- Nao terminei isso aqui, mas pode deixar isso e os btn de logoff, tarefa e salvar curso, q eu preciso de uma vitoria hj-->
                               <p>Ainda não está cadastrado?<a class="linkCadastro" href="cadastro.html"> Cadastre-se aqui</a></p>
                               <div class="container-btn">
                                 <button type="submit" name="submit" class="btn entrar">Entrar</button>
@@ -152,53 +151,6 @@
       </div>
     </div>
     <!-- Fim Modal -->
-    <script>
-      function salvarAlteracoes() {
-        modal = document.getElementById('modalAlterarPerfil')
-        if (!$("#form-cadastro")[0].checkValidity()) {
-          modal.innerHTML = `<div class="modal-dialog modal-dialog-centered">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                                </div>
-                                                <div class="modal-body" id="modalBody">
-                                                    <h6>preencha os dados do formulário corretamente</h6>
-                                                </div>
-                                                <div class="modal-footer">
-                                                </div>
-                                            </div>
-                                        </div>`;
-          return;
-        }
-        let usuario = JSON.parse(sessionStorage.getItem('usuarioLogado'));
-        let dbCadastro = JSON.parse(localStorage.getItem('db_cadastro'));
-        let index = dbCadastro.map((obj) => obj.id).indexOf(usuario.id);
-        usuario.nome = dbCadastro[index].nome =  $("#inputNome").val();
-        usuario.usuario = dbCadastro[index].usuario = $("#inputUsuario").val();
-        usuario.email = dbCadastro[index].email = $("#inputEmail").val();
-        usuario.senha = dbCadastro[index].senha = $("#inputSenha").val();
-        usuario.papel = dbCadastro[index].papel = $("#inputPapel").val();
-        usuario.confirmSenha = dbCadastro[index].confirmSenha = $("#inputConfirmSenha").val();
-
-        localStorage.setItem("db_cadastro", JSON.stringify(dbCadastro));
-        sessionStorage.setItem ('usuarioLogado', JSON.stringify (usuario));
-        modal.innerHTML = `<div class="modal-dialog modal-dialog-centered">
-                              <div class="modal-content">
-                                  <div class="modal-header">
-                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                  </div>
-                                  <div class="modal-body" id="modalBody">
-                                      <h6>dados alterados com sucesso</h6>
-                                  </div>
-                                  <div class="modal-footer">
-                                  </div>
-                              </div>
-                          </div>`;
-        $('#modalAlterarPerfil').on('hidden.bs.modal', function () {
-            location.reload();
-        });
-      }
-    </script>
     <script src="scripts/login.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
