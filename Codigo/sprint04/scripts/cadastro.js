@@ -65,7 +65,7 @@ function init() {
                                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                             </div>
                                             <div class="modal-body" id="modalBody">
-                                                <h6>A sua senha não pode ser confirmada</h6>
+                                                <h6>A sua senha não pôde ser confirmada</h6>
                                             </div>
                                             <div class="modal-footer">
                                             </div>
