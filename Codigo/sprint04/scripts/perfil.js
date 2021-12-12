@@ -40,8 +40,33 @@ function apagarPerfil() {
 }
 
 function salvarAlteracoes() {
-    
-    
+    let usuario = JSON.parse(sessionStorage.getItem('usuarioLogado'));
+    let dbCadastro = JSON.parse(localStorage.getItem('db_cadastro'));
+    let index = dbCadastro.map((obj) => obj.id).indexOf(usuario.id);
+    let campoNome = document.getElementById('inputNome').val();
+    let campoUsuario = document.getElementById('inputUsuario').val();
+    let campoEmail = document.getElementById('inputEmail').val();
+    let campoSenha = document.getElementById('inputSenha').val();
+    let campoPapel = document.getElementById('inputPapel').val();
+    let campoConfirmSenha = document.getElementById('inputConfirmSenha').val();
+
+    (dbCadastro[index].nome = campoNome),
+    (dbCadastro[index].email = campoEmail),
+    (dbCadastro[index].confirmSenha = campoConfirmSenha),
+    (dbCadastro[index].senha = campoSenha),
+    (dbCadastro[index].papel = campoPapel),
+    (dbCadastro[index].usuario = campoUsuario);
+
+    (usuario.nome = campoNome),
+    (usuario.email = campoEmail),
+    (usuario.confirmSenha = campoConfirmSenha),
+    (usuario.senha = campoSenha),
+    (usuario.papel = campoPapel),
+    (usuario.usuario = campoUsuario);
+
+
+    localStorage.setItem("db_cadastro", JSON.stringify(dbCadastro));
+    sessionStorage.setItem ('usuarioLogado', JSON.stringify (usuario));
 }
 
 
