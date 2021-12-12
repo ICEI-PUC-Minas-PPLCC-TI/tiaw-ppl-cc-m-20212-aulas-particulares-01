@@ -132,7 +132,7 @@ document.getElementById ('login-form').addEventListener ('submit', processaFormL
 
 function checarLogin(){
     let usuario = JSON.parse(sessionStorage.getItem('usuarioLogado'));
-    if (!dbUsuarios) {
+    if (!usuario) {
         window.location.href = 'index.html';
     }
 }
