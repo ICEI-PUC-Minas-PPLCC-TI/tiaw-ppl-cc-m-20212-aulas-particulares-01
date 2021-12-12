@@ -66,7 +66,7 @@
 
     <main class="container flex-grow-1"> <!-- flex-grow-1 sets flex-grow:1 to our <main>, effectively instructing it to fill any remaining vertical space -->
       <section class="row justify-content-center">
-        <div class="col-12 col-sm-12 col-md-7 col-lg-6 container-perfil">
+        <div class="col-12 col-sm-12 col-md-9 col-lg-7 col-xl-6 container-perfil">
             <h1 class="text-center">editar meu perfil</h1>
             <div class="container-form">
                 <form id="form-cadastro" method="post">
@@ -75,7 +75,7 @@
                   </div>
                     <div class="btnHolder">
                         <input type="button" class="btn btn-apagar" id="btnApagar" value="apagar meu perfil" data-bs-toggle="modal" data-bs-target="#modalApagarPerfil">
-                        <input type="button" class="btn btn-editar" id="btnEditar" value="salvar alterações" onclick="salvarAlteracoes()">
+                        <input type="button" class="btn btn-editar" id="btnEditar" value="salvar alterações" onclick="salvarAlteracoes()" data-bs-toggle="modal" data-bs-target="#modalAlterarPerfil">
                     </div>
                   </form>
             </div>
@@ -117,27 +117,59 @@
               </div>
             </div>
         </div>
-      </div>
-      <!-- Fim Modal -->
-      <div class="modal fade" id="modalApagarPerfil" aria-hidden="true" aria-labelledby="modalApagarPerfil" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-              <div class="modal-header">
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body" id="modalBody">
-                  <h6>tem certeza que deseja apagar seu perfil?</h6>
-              </div>
-              <div class="modal-footer">
-                <button class="btn" data-bs-dismiss="modal" aria-label="Close">cancelar</button>
-                <button class="btn apagar" onclick="apagarPerfil()">sim</button>
-              </div>
-          </div>
+    </div>
+    <!-- Fim Modal -->
+    <div class="modal fade" id="modalApagarPerfil" aria-hidden="true" aria-labelledby="modalApagarPerfil" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="modalBody">
+                <h6>tem certeza que deseja apagar seu perfil?</h6>
+            </div>
+            <div class="modal-footer">
+              <button class="btn" data-bs-dismiss="modal" aria-label="Close">cancelar</button>
+              <button class="btn apagar" onclick="apagarPerfil()">sim</button>
+            </div>
         </div>
       </div>
-      <!-- Fim Modal-->
+    </div>
+    <!-- Fim Modal-->
+    <!-- Início Modal Alerta: É ALTERADO DE ACORDO COM O JS - curso ja foi salvado ou nao -->
+    <div class="modal fade" id="modalAlterarPerfil" aria-hidden="true" aria-labelledby="modalAlterarPerfil" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h6>dados alterados com sucesso</h6>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- Fim Modal -->
     <script>
       function salvarAlteracoes() {
+        modal = document.getElementById('modalAlterarPerfil')
+        if (!$("#form-cadastro")[0].checkValidity()) {
+          modal.innerHTML = `<div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body" id="modalBody">
+                                                    <h6>preencha os dados do formulário corretamente</h6>
+                                                </div>
+                                                <div class="modal-footer">
+                                                </div>
+                                            </div>
+                                        </div>`;
+          return;
+        }
         let usuario = JSON.parse(sessionStorage.getItem('usuarioLogado'));
         let dbCadastro = JSON.parse(localStorage.getItem('db_cadastro'));
         let index = dbCadastro.map((obj) => obj.id).indexOf(usuario.id);
@@ -150,7 +182,21 @@
 
         localStorage.setItem("db_cadastro", JSON.stringify(dbCadastro));
         sessionStorage.setItem ('usuarioLogado', JSON.stringify (usuario));
-        document.location.reload();
+        modal.innerHTML = `<div class="modal-dialog modal-dialog-centered">
+                              <div class="modal-content">
+                                  <div class="modal-header">
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body" id="modalBody">
+                                      <h6>dados alterados com sucesso</h6>
+                                  </div>
+                                  <div class="modal-footer">
+                                  </div>
+                              </div>
+                          </div>`;
+        $('#modalAlterarPerfil').on('hidden.bs.modal', function () {
+            location.reload();
+        });
       }
     </script>
     <script src="scripts/login.js"></script>

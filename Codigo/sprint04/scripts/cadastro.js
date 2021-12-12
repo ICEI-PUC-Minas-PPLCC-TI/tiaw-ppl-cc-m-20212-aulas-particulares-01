@@ -88,7 +88,9 @@ function init() {
                                 </div>
                             </div>
                         </div>`;
-
+    $('#modalCadastro').on('hidden.bs.modal', function () {
+            location.reload();
+    });
     // Limpa o formulario
     $("#form-cadastro")[0].reset();
   });
