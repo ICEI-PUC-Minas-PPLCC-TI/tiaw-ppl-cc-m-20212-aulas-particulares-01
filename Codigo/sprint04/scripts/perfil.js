@@ -39,5 +39,65 @@ function apagarPerfil() {
     LogoutUser()
 }
 
+function salvarAlteracoes() {
+    modal = document.getElementById('modalAlterarPerfil')
+    if (!$("#form-cadastro")[0].checkValidity()) {
+      modal.innerHTML = `<div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body" id="modalBody">
+                                                <h6>preencha os dados do formulário corretamente</h6>
+                                            </div>
+                                            <div class="modal-footer">
+                                            </div>
+                                        </div>
+                                    </div>`;
+      return;
+    }
+    //Verifica se senha e confirmSenha são iguais
+    if($("#inputSenha").val() != $("#inputConfirmSenha").val()){
+      modal.innerHTML = `<div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body" id="modalBody">
+                                                <h6>A sua senha não pode ser confirmada</h6>
+                                            </div>
+                                            <div class="modal-footer">
+                                            </div>
+                                        </div>
+                                    </div>`;
+      return
+    }
+    let usuario = JSON.parse(sessionStorage.getItem('usuarioLogado'));
+    let dbCadastro = JSON.parse(localStorage.getItem('db_cadastro'));
+    let index = dbCadastro.map((obj) => obj.id).indexOf(usuario.id);
+    usuario.nome = dbCadastro[index].nome =  $("#inputNome").val();
+    usuario.usuario = dbCadastro[index].usuario = $("#inputUsuario").val();
+    usuario.email = dbCadastro[index].email = $("#inputEmail").val();
+    usuario.senha = dbCadastro[index].senha = $("#inputSenha").val();
+    usuario.papel = dbCadastro[index].papel = $("#inputPapel").val();
+    usuario.confirmSenha = dbCadastro[index].confirmSenha = $("#inputConfirmSenha").val();
 
+    localStorage.setItem("db_cadastro", JSON.stringify(dbCadastro));
+    sessionStorage.setItem ('usuarioLogado', JSON.stringify (usuario));
+    modal.innerHTML = `<div class="modal-dialog modal-dialog-centered">
+                          <div class="modal-content">
+                              <div class="modal-header">
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body" id="modalBody">
+                                  <h6>dados alterados com sucesso</h6>
+                              </div>
+                              <div class="modal-footer">
+                              </div>
+                          </div>
+                      </div>`;
+    $('#modalAlterarPerfil').on('hidden.bs.modal', function () {
+        location.reload();
+    });
+  }
 
