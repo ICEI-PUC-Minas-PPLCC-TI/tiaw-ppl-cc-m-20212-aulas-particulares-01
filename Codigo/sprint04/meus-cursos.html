@@ -16,7 +16,7 @@
     <script src="scripts/salvarCurso.js"></script>
   </head>
 
-  <body class="d-flex flex-column min-vh-100" onload="carregaDisciplinas(); checarLogin(); trocaBotoes(); carregaCursosSalvos(); "> 
+  <body class="d-flex flex-column min-vh-100" onload="carregaDisciplinas(); checarLogin(); trocaBotoes(); carregaCursosSalvos();carregaUsuario();"> 
     <!-- class d-flex sets display:flex to our <body> tag (FOOTER SEMPRE AO FIM DA PÁGINA) -->
     <!-- class flex-column sets flex-direction:column to our <body> tag. Its children (<header>, <main>, <footer> and any other direct child) are now aligned vertically (FOOTER SEMPRE AO FIM DA PÁGINA) -->
     <!-- min-vh-100 ensures that the body element will stretch to at least the full height of the screen (FOOTER SEMPRE AO FIM DA PÁGINA) -->
@@ -69,11 +69,11 @@
         <div class="col-12 col-sm-12 col-md-4 col-lg-2 perfil">
           <div class="container-perfil">
             <div class="conatiner-imgperfil">
-              <img src="imagens/perfil/clarice.jpeg" alt="">
+              <img src="imagens/avatar-placeholder.png" alt="">
             </div>
             <div class="container-infousuario">
-              <h6>@clarice005</h6>
-              <a href="#" class="btn">configurações</a>
+              <h6 id="UserCursos">@user</h6>
+              <a href="tarefas.html" class="btn">meus estudos</a>
             </div>
           </div>
         </div>
