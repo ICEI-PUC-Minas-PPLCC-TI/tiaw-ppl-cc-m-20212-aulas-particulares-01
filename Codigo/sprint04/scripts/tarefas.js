@@ -5,21 +5,25 @@ var db_tarefas_inicial = {
             "id": 1,
             "nome": "Fazer os exercícios de trigonometria",
             "prioridade": "Média",
+            "idUsuario": "default",
         },
         {
             "id": 2,
             "nome": "Rever curso de trigonometria",
             "prioridade": "Baixa",
+            "idUsuario": "default",
         },
         {
             "id": 3,
             "nome": "Fazer as questões do enem 2020, dia 01",
             "prioridade": "Alta",
+            "idUsuario": "default",
         },
         {
             "id": 4,
             "nome": "Assistir curso de  Química Geral",
             "prioridade": "Alta",
+            "idUsuario": "default",
         },
     ],
 }
@@ -39,6 +43,7 @@ function displayMessage(msg) {
 
 
 function insertTarefa(tarefa) {
+    var usuario = JSON.parse(sessionStorage.getItem('usuarioLogado'));
     // Calcula novo Id a partir do último código existente no array (PODE GERAR ERRO SE A BASE ESTIVER VAZIA)
     let novoId = 1;
     if (dbTarefas.data.length != 0)
@@ -47,7 +52,7 @@ function insertTarefa(tarefa) {
         "id": novoId,
         "nome": tarefa.nome,
         "prioridade": tarefa.prioridade,
-        //"idUsuario":,
+        "idUsuario": usuario.id,
     };
 
     // Insere o novo objeto no array
