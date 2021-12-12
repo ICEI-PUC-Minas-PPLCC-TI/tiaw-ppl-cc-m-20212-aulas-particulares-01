@@ -51,10 +51,10 @@
             </div>
             <div class="dropdown" id="btns-Logado">
               <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                nome do manin
+                nome do usuario
               </button>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                <li><a class="dropdown-item" href="meus-cursos.html">Meus Cursos</a></li>
+                <li><a class="dropdown-item" href="meus-cursos.html">meus cursos</a></li>
                 <li><a class="dropdown-item" href="tarefas.html">Minhas Tarefas</a></li>
                 <li><a class="dropdown-item" href="edicao-perfil.html">Editar Meu Perfil</a></li>
                 <li><button class="dropdown-item" href="#" id="btnLogoff" onclick="LogoutUser()">Fazer Log off</button></li>
@@ -140,30 +140,30 @@
     <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
-          <div class="modal-header">
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-              <div id="login-box" class="col-md-12">
-                  <form id="login-form" class="form" method="post" onsubmit="loginUser (this)">
-                      <h3 class="text-center modal-title" id="loginModalLabel">Login</h3>
-                      <div class="form-group">
-                          <label for="inputUsuario" class="form-label">Usuário:</label>
-                          <input type="text" class="form-control" id="loginUsuario">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div id="login-box" class="col-md-12">
+                    <form id="login-form" class="form" method="post" onsubmit="loginUser (this)">
+                        <h3 class="text-center modal-title" id="loginModalLabel">Login</h3>
+                        <div class="form-group">
+                            <label for="inputUsuario" class="form-label">Usuário:</label>
+                            <input type="text" class="form-control" id="loginUsuario">
 
-                          <label for="inputPassword" class="form-label">Senha:</label>
-                          <input type="password" class="form-control" id="loginSenha">
-                          <!-- Nao terminei isso aqui, mas pode deixar isso e os btn de logoff, tarefa e salvar curso, q eu preciso de uma vitoria hj-->
-                          <p>Ainda não está cadastrado?<a class="linkCadastro" href="cadastro.html"> Cadastre-se aqui</a></p>
-                          <div class="container-btn">
-                            <button type="submit" name="submit" class="btn entrar">Entrar</button>
-                          </div>
-                      </div>
-                  </form>
-              </div>
-          </div>
-          <div class="modal-footer">
-          </div>
+                            <label for="inputPassword" class="form-label">Senha:</label>
+                            <input type="password" class="form-control" id="loginSenha">
+                            <!-- Nao terminei isso aqui, mas pode deixar isso e os btn de logoff, tarefa e salvar curso, q eu preciso de uma vitoria hj-->
+                            <p>Ainda não está cadastrado?<a class="linkCadastro" href="cadastro.html"> Cadastre-se aqui</a></p>
+                            <div class="container-btn">
+                              <button type="submit" name="submit" class="btn entrar">Entrar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="modal-footer">
+            </div>
           </div>
       </div>
     </div>
