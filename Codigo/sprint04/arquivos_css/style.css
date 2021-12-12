@@ -167,3 +167,8 @@ p {
 .linkCadastro:hover {
     color: #0f5088;
 }
+
+.modal h6 {
+    margin-top: 8px;
+}
+
