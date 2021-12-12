@@ -92,9 +92,9 @@ function trocaBotoes(){
                         ${dbUsuarios.nome}
                       </button>
                       <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item" href="meus-cursos.html">Meus Cursos</a></li>
-                        <li><a class="dropdown-item" href="tarefas.html">Meus estudos</a></li>
-                        <li><a class="dropdown-item" href="edicao-perfil.html">Editar Meu Perfil</a></li>
+                        <li><a class="dropdown-item" href="meus-cursos.html">meus cursos</a></li>
+                        <li><a class="dropdown-item" href="tarefas.html">meus estudos</a></li>
+                        <li><a class="dropdown-item" href="edicao-perfil.html">editar meu perfil</a></li>
                         <li><button class="dropdown-item" href="#" id="btnLogoff" onclick="LogoutUser()">sair</button></li>
                       </ul>
             `
