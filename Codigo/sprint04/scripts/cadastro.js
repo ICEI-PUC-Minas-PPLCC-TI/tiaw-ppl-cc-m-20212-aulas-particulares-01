@@ -92,13 +92,26 @@ function exibeCadastro() {
 }
   
       function init() {
+          modal = document.getElementById('modalCadastro')
+          
           // Adiciona funções para tratar os eventos 
           $("#btnInsert").click(function () {
             console.log('o botao funciona')  
             // Verfica se o formulário está preenchido corretamente
               if (!$('#form-cadastro')[0].checkValidity()) {
-                  displayMessage("Preencha o formulário corretamente.");
-                  return;
+                modal.innerHTML = `<div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body" id="modalBody">
+                                                <h6>preencha os dados do formulário corretamente</h6>
+                                            </div>
+                                            <div class="modal-footer">
+                                            </div>
+                                        </div>
+                                    </div>`
+                return;
               }
   
               // Obtem os valores dos campos do formulário
@@ -116,9 +129,21 @@ function exibeCadastro() {
                   confirmSenha: campoConfirmSenha };
   
               insertCadastro(cadastro);
-  
+              modal.innerHTML = `<div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body" id="modalBody">
+                                                <h6>usuário cadastrado com sucesso</h6>
+                                            </div>
+                                            <div class="modal-footer">
+                                            </div>
+                                        </div>
+                                    </div>`
               // Reexibe os cadastros
               exibeCadastro();
+
   
               // Limpa o formulario
               $("#form-cadastro")[0].reset();
