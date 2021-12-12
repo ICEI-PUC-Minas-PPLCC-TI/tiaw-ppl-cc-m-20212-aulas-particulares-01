@@ -33,8 +33,6 @@ function insertCadastro(cadastro) {
   localStorage.setItem("db_cadastro", JSON.stringify(dbCadastro));
 }
 
-/***************************HTML */
-
 function init() {
   modal = document.getElementById("modalCadastro");
 
@@ -90,7 +88,7 @@ function init() {
       return;
     }
 
-    
+
     insertCadastro(cadastro);
 
     loginUser(campoUsuario, campoSenha);
