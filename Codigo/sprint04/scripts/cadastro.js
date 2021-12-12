@@ -40,6 +40,39 @@ function init() {
 
   // Adiciona funções para tratar os eventos
   $("#btnInsert").click(function () {
+    
+    // Obtem os valores dos campos do formulário
+    let campoNome = $("#inputNome").val();
+    let campoUsuario = $("#inputUsuario").val();
+    let campoEmail = $("#inputEmail").val();
+    let campoSenha = $("#inputSenha").val();
+    let campoPapel = $("#inputPapel").val();
+    let campoConfirmSenha = $("#inputConfirmSenha").val();
+    let cadastro = {
+      nome: campoNome,
+      usuario: campoUsuario,
+      email: campoEmail,
+      senha: campoSenha,
+      papel: campoPapel,
+      confirmSenha: campoConfirmSenha,
+    };
+
+    //Verifica se senha e confirmSenha são iguais
+    if(cadastro.senha != cadastro.confirmSenha){
+      modal.innerHTML = `<div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body" id="modalBody">
+                                                <h6>A sua senha não pode ser confirmada</h6>
+                                            </div>
+                                            <div class="modal-footer">
+                                            </div>
+                                        </div>
+                                    </div>`;
+      return
+    }
     // Verfica se o formulário está preenchido corretamente
     if (!$("#form-cadastro")[0].checkValidity()) {
       modal.innerHTML = `<div class="modal-dialog modal-dialog-centered">
@@ -57,22 +90,7 @@ function init() {
       return;
     }
 
-    // Obtem os valores dos campos do formulário
-    let campoNome = $("#inputNome").val();
-    let campoUsuario = $("#inputUsuario").val();
-    let campoEmail = $("#inputEmail").val();
-    let campoSenha = $("#inputSenha").val();
-    let campoPapel = $("#inputPapel").val();
-    let campoConfirmSenha = $("#inputConfirmSenha").val();
-    let cadastro = {
-      nome: campoNome,
-      usuario: campoUsuario,
-      email: campoEmail,
-      senha: campoSenha,
-      papel: campoPapel,
-      confirmSenha: campoConfirmSenha,
-    };
-
+    
     insertCadastro(cadastro);
 
     loginUser(campoUsuario, campoSenha);
