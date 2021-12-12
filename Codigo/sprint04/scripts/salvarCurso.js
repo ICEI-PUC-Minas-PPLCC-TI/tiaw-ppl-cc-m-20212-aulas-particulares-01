@@ -57,7 +57,7 @@ function salvarCurso(idCurso) {
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <h6>curso salvado com sucesso!</h6>
+                            <h6>curso salvo com sucesso!</h6>
                         </div>
                         <div class="modal-footer">
                         </div>
@@ -147,4 +147,11 @@ function removeCurso(index) {
     localStorage.setItem("cursosSalvos", JSON.stringify(dataSalvos))
 
     carregaCursosSalvos()
+}
+
+//carrega usuario logado no menu a esquerda da página de cursos salvos
+function carregaUsuario() {
+    let usuario = JSON.parse(sessionStorage.getItem('usuarioLogado'));
+    let user = document.getElementById('UserCursos')
+    user.innerHTML = `<h6 id="UserCursos">@${usuario.usuario}</h6>`
 }
