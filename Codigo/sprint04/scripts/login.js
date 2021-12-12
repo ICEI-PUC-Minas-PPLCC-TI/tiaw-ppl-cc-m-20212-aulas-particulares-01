@@ -93,9 +93,9 @@ function trocaBotoes(){
                       </button>
                       <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                         <li><a class="dropdown-item" href="meus-cursos.html">Meus Cursos</a></li>
-                        <li><a class="dropdown-item" href="tarefas.html">Minhas Tarefas</a></li>
+                        <li><a class="dropdown-item" href="tarefas.html">Meus estudos</a></li>
                         <li><a class="dropdown-item" href="edicao-perfil.html">Editar Meu Perfil</a></li>
-                        <li><button class="dropdown-item" href="#" id="btnLogoff" onclick="LogoutUser()">Fazer Log off</button></li>
+                        <li><button class="dropdown-item" href="#" id="btnLogoff" onclick="LogoutUser()">sair</button></li>
                       </ul>
             `
         btnsLogado.innerHTML = htmlStr
