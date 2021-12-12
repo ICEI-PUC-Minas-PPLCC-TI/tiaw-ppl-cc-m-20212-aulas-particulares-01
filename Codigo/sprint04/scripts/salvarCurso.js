@@ -22,7 +22,7 @@ function salvarCurso(idCurso) {
     // pagina so e acessada se o usuario estiver logado
     // puxar dados do usuario para  salvar o curso associado ao id do usuario
     let usuario = JSON.parse(sessionStorage.getItem('usuarioLogado'));
-    if (Object.keys(usuario).length === 0) {
+    if  (!usuario) {
         htmlStr = 
                 `<div class="modal-dialog modal-dialog-centered modal-md">
                     <div class="modal-content">
