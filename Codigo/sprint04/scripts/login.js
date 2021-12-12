@@ -79,7 +79,7 @@ function trocaBotoes(){
     let btnsLogado = document.getElementById("btns-Logado");
     let btnsNaoLogado = document.getElementById("btns-naoLogado");
 
-    if(Object.keys(dbUsuarios).length === 0){
+    if (!dbUsuarios){
         btnsLogado.style.display = "none";
     }
     else{
@@ -104,8 +104,7 @@ function trocaBotoes(){
 }
 
 function LogoutUser(){
-    usuarioLogado = {};
-    sessionStorage.setItem ('usuarioLogado', JSON.stringify (usuarioLogado));
+    sessionStorage.removeItem ('usuarioLogado');
     //alert('Log off concluido')
     document.location.reload();
 }
@@ -133,7 +132,7 @@ document.getElementById ('login-form').addEventListener ('submit', processaFormL
 
 function checarLogin(){
     let usuario = JSON.parse(sessionStorage.getItem('usuarioLogado'));
-    if (Object.keys(usuario).length === 0) {
+    if (!dbUsuarios) {
         window.location.href = 'index.html';
     }
 }
