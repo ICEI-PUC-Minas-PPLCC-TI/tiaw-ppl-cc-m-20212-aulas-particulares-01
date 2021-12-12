@@ -106,9 +106,8 @@ function trocaBotoes(){
 function LogoutUser(){
     usuarioLogado = {};
     sessionStorage.setItem ('usuarioLogado', JSON.stringify (usuarioLogado));
-    alert('Log off concluido')
+    //alert('Log off concluido')
     document.location.reload();
-    
 }
 
 initLoginApp ();
