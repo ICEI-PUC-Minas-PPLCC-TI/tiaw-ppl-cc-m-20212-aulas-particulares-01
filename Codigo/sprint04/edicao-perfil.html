@@ -66,7 +66,7 @@
 
     <main class="container flex-grow-1"> <!-- flex-grow-1 sets flex-grow:1 to our <main>, effectively instructing it to fill any remaining vertical space -->
       <section class="row justify-content-center">
-        <div class="col-6 container-perfil">
+        <div class="col-12 col-sm-12 col-md-7 col-lg-6 container-perfil">
             <h1 class="text-center">editar meu perfil</h1>
             <div class="container-form">
                 <form id="form-cadastro" method="post">
@@ -147,10 +147,11 @@
         usuario.senha = dbCadastro[index].senha = $("#inputSenha").val();
         usuario.papel = dbCadastro[index].papel = $("#inputPapel").val();
         usuario.confirmSenha = dbCadastro[index].confirmSenha = $("#inputConfirmSenha").val();
- 
+
         localStorage.setItem("db_cadastro", JSON.stringify(dbCadastro));
         sessionStorage.setItem ('usuarioLogado', JSON.stringify (usuario));
-      }    
+        document.location.reload();
+      }
     </script>
     <script src="scripts/login.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
