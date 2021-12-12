@@ -34,9 +34,10 @@ function apagarPerfil() {
     localStorage.setItem('db_cadastro', JSON.stringify(dbCadastro));
 
     //Deslogar usuario
-    sessionStorage.removeItem ('usuarioLogado');
+    usuarioLogado = {};
+    sessionStorage.setItem ('usuarioLogado', JSON.stringify (usuarioLogado));
     // redirecionar para a pagina inicial
-    window.location.href = 'index.html';
+    document.location.reload();
 }
 
 function salvarAlteracoes() {
