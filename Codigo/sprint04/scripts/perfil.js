@@ -5,19 +5,19 @@ function preencheForm() {
             let htmlStr = `<input type="text" class="form-control" id="inputId" hidden disabled>
                             
                         <label for="inputNome" class="form-label">Nome Completo:</label>
-                        <input type="text" class="form-control" id="inputNome" value="${usuario.nome}">
+                        <input type="text" class="form-control" id="inputNome" value="${usuario.nome}" required>
 
                         <label for="inputUsuario" class="form-label">Nome de Usuário</label>
-                        <input type="text" class="form-control" id="inputUsuario" value="${usuario.usuario}">
+                        <input type="text" class="form-control" id="inputUsuario" value="${usuario.usuario}" required>
 
                         <label for="inputEmail" class="form-label">Endereço de Email</label>
-                        <input type="email" class="form-control" id="inputEmail" value="${usuario.email}">
+                        <input type="email" class="form-control" id="inputEmail" value="${usuario.email}" required>
 
                         <label for="inputPassword" class="form-label">Digite uma senha</label>
-                        <input type="password" class="form-control" id="inputSenha">
+                        <input type="password" class="form-control" id="inputSenha" required>
 
                         <label for="inputPassword" class="form-label">Confirme sua senha</label>
-                        <input type="password" class="form-control" id="inputConfirmSenha">`
+                        <input type="password" class="form-control" id="inputConfirmSenha" required>`
 
             form.innerHTML = htmlStr
     }
@@ -37,36 +37,6 @@ function apagarPerfil() {
 
     //Deslogar usuario
     LogoutUser()
-}
-
-function salvarAlteracoes() {
-    let usuario = JSON.parse(sessionStorage.getItem('usuarioLogado'));
-    let dbCadastro = JSON.parse(localStorage.getItem('db_cadastro'));
-    let index = dbCadastro.map((obj) => obj.id).indexOf(usuario.id);
-    let campoNome = document.getElementById('inputNome').val();
-    let campoUsuario = document.getElementById('inputUsuario').val();
-    let campoEmail = document.getElementById('inputEmail').val();
-    let campoSenha = document.getElementById('inputSenha').val();
-    let campoPapel = document.getElementById('inputPapel').val();
-    let campoConfirmSenha = document.getElementById('inputConfirmSenha').val();
-
-    (dbCadastro[index].nome = campoNome),
-    (dbCadastro[index].email = campoEmail),
-    (dbCadastro[index].confirmSenha = campoConfirmSenha),
-    (dbCadastro[index].senha = campoSenha),
-    (dbCadastro[index].papel = campoPapel),
-    (dbCadastro[index].usuario = campoUsuario);
-
-    (usuario.nome = campoNome),
-    (usuario.email = campoEmail),
-    (usuario.confirmSenha = campoConfirmSenha),
-    (usuario.senha = campoSenha),
-    (usuario.papel = campoPapel),
-    (usuario.usuario = campoUsuario);
-
-
-    localStorage.setItem("db_cadastro", JSON.stringify(dbCadastro));
-    sessionStorage.setItem ('usuarioLogado', JSON.stringify (usuario));
 }
 
 
