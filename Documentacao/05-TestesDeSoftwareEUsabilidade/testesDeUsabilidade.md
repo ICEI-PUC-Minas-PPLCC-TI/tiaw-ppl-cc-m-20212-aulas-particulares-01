@@ -4,17 +4,28 @@ Além de serem apresentados à plataforma e navegarem livremente, os usuários r
 
 ## Usuários envolvidos nos teste
 
-**Número de Usuários:** 6
+**Número de Usuários:** 7
 
 Dentre as pessoas que testaram o Simplinsino estão:
-
-- **Maria**: está na casa dos 50 anos e já foi professora. Tem noções básicas de informática. 
-- **Ricardo:** é universitário e tem conhecimento avançado de informática
-
 **obs:**  nomes fictícios
 
-## Problemas Identificados e propostas de ajustes
+- **Maria:** mãe, professora, na faixa dos 50 anos. Ela tem noções básicas de informática.
+- **Ricardo:** 18 anos, é estudante de Ciência da Computação e tem conhecimento avançado de informática.
+- **Mario:** 24 anos, é professor particular de biologia  e não tem conhecimento de informática 
+- **Clara:** 16 anos, estudante do ensino médio, gosta de estudar, tem conhecimento mediano de informática
+- **Renata:** 44 anos, dermatologista, ela é mãe solteira e não sabe nada de computador.
+- **Álvaro:** 35 anos, concursado, tem conhecimentos avançados de informática
+- **Julio:** 17 anos, estudante de ensino médio, têm dificuldades de aprendizado, tem conhecimento mediano de informática
 
-- Detalhamente mais claro de como se altera ou exclui uma tarefa na página "meus estudos"
+
+## Problemas Identificados
+
+- Detalhamento mais claro de como se altera ou exclui uma tarefa na página "meus estudos"
+- A possibilidade de adicionar imagem de perfil
+- Poderia ter uma página de exercícios.
 - Mais cursos na plataforma
 - Página de disciplinas favoritas, dentro dela existiriam sugestões de curso e conteúdo relacionados à disciplina
+- Carrossel da página inicial apresenta problema de posicionamento no controle
+- O cadastro do parceiro não é realizado de fato, com email enviado para aqueles que desejam disponibilizar seu conteúdo na plataforma
+- O cadastro de parceiros não é seguro 
+- Mostrar comentários por vídeo e quais são os cursos mais populares
