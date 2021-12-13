@@ -15,3 +15,4 @@ Dentre as pessoas que testaram o Simplinsino estão:
 ## Problemas Identificados e propostas de ajustes
 
 - Detalhamente mais claro de como se altera ou exclui uma tarefa na página "meus estudos"
+- Mais cursos na plataforma
