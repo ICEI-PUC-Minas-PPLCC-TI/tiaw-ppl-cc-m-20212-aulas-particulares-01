@@ -19,7 +19,7 @@ Funcionalidade que realiza o cadastro do usuário na plataforma
 
 Aluno responsável: Felipe Moura
 
-[Linl do código](https://github.com/ICEI-PUC-Minas-PPLCC-TI/tiaw-ppl-cc-m-20212-aulas-particulares-01/blob/master/Codigo/scripts/scriptCurso.js)
+[Link do código](https://github.com/ICEI-PUC-Minas-PPLCC-TI/tiaw-ppl-cc-m-20212-aulas-particulares-01/blob/master/Codigo/scripts/scriptCurso.js)
 
 Funcionalidade que exibe as aulas e dados do curso selecionado. 
 
