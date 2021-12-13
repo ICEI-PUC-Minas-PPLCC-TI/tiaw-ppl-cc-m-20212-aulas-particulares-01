@@ -1,3 +1,0 @@
-Esse aqui eh o codigo do rommel
-usei ele pra fazer o popup
-se vc precisar do js que fez, da uma olhada antes pq eu mexi nas ids e ta td zuado kkkkkkk 
