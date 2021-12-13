@@ -56,6 +56,8 @@ p {
     .inicio h2,
     .inicio h1 {
         text-align: center;
+        padding-left: 15px;
+        padding-right: 15px;
         margin-right: 0px;
         line-height: 45px;
     }
@@ -147,15 +149,22 @@ p {
 
 @media screen and (max-width: 503.9px) {
     .materia ul {
-        padding-left: 12px;
+        padding-left: 0px;
         margin-left: auto;
         margin-right: auto;
     }
     .materia li {
         padding-left: 0px !important;
     }
+    .container-mat {
+        text-align: center;
+        display: block;
+    }
     .materia .btn {
-        margin-left: 6px !important;
+        margin-bottom: 10px;
+    }
+    .materia img {
+        width: 40%;
     }
 }
 

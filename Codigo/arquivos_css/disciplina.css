@@ -187,7 +187,9 @@ button {
     text-decoration: none;
 }
 
-
+#lista_cursos {
+    padding-left: 0;
+}
 
 
 
