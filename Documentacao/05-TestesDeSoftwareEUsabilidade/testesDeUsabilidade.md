@@ -8,9 +8,10 @@ Além de serem apresentados à plataforma e navegarem livremente, os usuários r
 
 Dentre as pessoas que testaram o Simplinsino estão:
 
-- detalhar pessoas
+- **Maria**: está na casa dos 50 anos e já foi professora. Tem noções básicas de informática. 
 
 **obs:**  nomes fictícios
 
 ## Problemas Identificados e propostas de ajustes
 
+- Detalhamente mais claro de como se altera ou exclui uma tarefa na página "meus estudos"
