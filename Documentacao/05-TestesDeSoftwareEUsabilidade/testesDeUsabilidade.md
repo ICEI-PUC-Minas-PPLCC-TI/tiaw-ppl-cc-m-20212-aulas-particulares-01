@@ -32,4 +32,4 @@ Dentre as pessoas que testaram o Simplinsino estão:
 
 ## OBS: Relatório feito por Álvaro 
 
-Relatório pode ser encontrado [aqui](https://github.com/ICEI-PUC-Minas-PPLCC-TI/tiaw-ppl-cc-m-20212-aulas-particulares-01/blob/master/Documentacao/05-TestesDeSoftwareEUsabilidade/simplinsino%20-%20relatorio.docx)
+Relatório pode ser encontrado [aqui](https://github.com/ICEI-PUC-Minas-PPLCC-TI/tiaw-ppl-cc-m-20212-aulas-particulares-01/blob/master/Documentacao/05-TestesDeSoftwareEUsabilidade/simplinsino%20-%20relatorio.pdf)
