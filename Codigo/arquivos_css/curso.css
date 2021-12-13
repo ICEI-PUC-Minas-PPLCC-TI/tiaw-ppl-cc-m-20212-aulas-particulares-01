@@ -15,14 +15,6 @@
 
 
 
-@media screen and (max-width: 767.9px) {
-    .salvar, 
-    .voltar   {
-        width: 49%;
-        margin-top: 30px !important;
-        display: inline-block;
-    }
-}
 
 .menu-lateral h6 {
     text-align: center;
@@ -38,9 +30,33 @@
 }
 
 .menu-lateral .btn {
-    width: 150px;
+    width: 170px;
     margin-top: 10px;
 }
+
+@media screen and (max-width: 767.9px) {
+    .menu-lateral .btn {
+        width: 300px;
+    }
+}
+
+.salvar,
+#btnVoltar {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-btns {
+    text-align: center;
+}
+
+@media screen and (max-width: 767.9px) {
+    .salvar,
+    #btnVoltar {
+        width: 300px;
+    }
+}
+
 
 .menu-lateral {
     background-color: #f8f9fa;
