@@ -6,7 +6,9 @@
     margin-bottom: 20px;
     padding-bottom: 0px;
 }
-
+.cadastro h4{
+    margin-bottom: 20px;
+}
 .cadastro img {
     width: 80%;
     display: block;
@@ -20,6 +22,9 @@
     text-align: center;
 }
 
+.texto-p {
+    margin-bottom: 30px;
+}
 
 @media screen and (max-width: 991.9px) {
     .cadastro img {

@@ -6,6 +6,10 @@
     padding-bottom: 0px;
 }
 
+.cadastro h4{
+    margin-bottom: 20px;
+}
+
 .container-img {
     margin-top: 30px;
     text-align: center;
@@ -97,6 +101,9 @@ form input {
     width: 150px !important;
 }
 
+.texto-p {
+    margin-bottom: 30px;
+}
 
 /*-------------------------- COMO FUNCIONA -------------------------*/
 .funcionamento h5 {
