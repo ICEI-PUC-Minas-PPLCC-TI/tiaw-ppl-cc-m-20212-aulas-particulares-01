@@ -4,7 +4,7 @@ Além de serem apresentados à plataforma e navegarem livremente, os usuários r
 
 ## Usuários envolvidos nos teste
 
-**Número de Usuários:** 
+**Número de Usuários:** 6
 
 Dentre as pessoas que testaram o Simplinsino estão:
 
