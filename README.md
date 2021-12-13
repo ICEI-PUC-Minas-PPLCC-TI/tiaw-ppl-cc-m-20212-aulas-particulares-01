@@ -18,5 +18,5 @@
 
 ## Instruções de utilização
 
-Assim que a primeira versão do sistema estiver disponível, deverá complementar com as instruções de utilização. Descreva como instalar eventuais dependências e como executar a aplicação.
+Primeiramente, você deve acessar o nosso site pelo link https://simplinsino.fernandamendes1.repl.co/index.html, em seguida, cadastre-se na nossa plataforma para ganhar acesso à páginas de conteúdos personalisados. Nelas você poderá acessar cursos salvos, organizar suas tarefas na página meus estudos e editar seu perfil. É importante dizer que para acessar às video-aulas você deve escolher uma disciplina na barra de navegação, em seguida, na página da disciplina selecionada, escolha um dos cursos listados e aproveite o video.
 
