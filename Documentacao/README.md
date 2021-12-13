@@ -13,11 +13,14 @@
 
 ## 02 - Projeto da solução
 
-  - Histórias de usuários
-  - Requisitos funcionais
-  - Requisitos não funcionais
-  - Restrições do Projeto
-  - Projeto de interface (wireframes e protótipo)
+  - Especificação
+    - Histórias de usuários
+    - Requisitos funcionais
+    - Requisitos não funcionais
+    - Restrições do Projeto
+  - Fluxo do usuário
+  - Wireframes e protótipo
+  - Arquitetura da solução e tecnologias
 
 
 
