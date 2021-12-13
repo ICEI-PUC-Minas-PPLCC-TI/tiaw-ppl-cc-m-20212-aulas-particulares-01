@@ -1,4 +1,4 @@
-# Funcionalidades do Sistema (Telas) **--------- INCOMPLETO ---------**
+# Funcionalidades do Sistema (Telas) 
 
 Telas desenvolvidas para cada uma das funcionalidades do sistema. 
 
@@ -19,7 +19,7 @@ Funcionalidade que realiza o cadastro do usuário na plataforma
 
 Aluno responsável: Felipe Moura
 
-Link do código: http:///
+[Linl do código](https://github.com/ICEI-PUC-Minas-PPLCC-TI/tiaw-ppl-cc-m-20212-aulas-particulares-01/blob/master/Codigo/scripts/scriptCurso.js)
 
 Funcionalidade que exibe as aulas e dados do curso selecionado. 
 
@@ -41,7 +41,7 @@ Funcionalidade que permite a visualização dos cursos e dos links indicados por
 
 Aluno responsável: Pablo Tosi
 
-Link do código: http:///
+[Link do código](https://github.com/ICEI-PUC-Minas-PPLCC-TI/tiaw-ppl-cc-m-20212-aulas-particulares-01/blob/master/Codigo/scripts/login.js)
 
 Funcionalidade para verificar a identidade do usuário a partir de um login e uma senha.
 
@@ -60,7 +60,7 @@ Funcionalidade que permite ao aluno cadastrar o que precisa estudar e a priorida
 
 Aluno responsável: Fernanda Mendes
 
-Link do código: 
+[Link do código](https://github.com/ICEI-PUC-Minas-PPLCC-TI/tiaw-ppl-cc-m-20212-aulas-particulares-01/blob/master/Codigo/scripts/salvarCurso.js)
 
 Funcionalidade que permite que o usuário salve cursos selecionados, que posteriormente são exibidos na página de cursos salvos pelo usuário
 
@@ -70,7 +70,7 @@ Funcionalidade que permite que o usuário salve cursos selecionados, que posteri
 
 Aluno responsável: Felipe Moura
 
-Link do código: 
+[Link do código](https://github.com/ICEI-PUC-Minas-PPLCC-TI/tiaw-ppl-cc-m-20212-aulas-particulares-01/blob/master/Codigo/scripts/perfil.js)
 
 Funcionalidade que permite que o usuário edite os dados do seu perfil
 
