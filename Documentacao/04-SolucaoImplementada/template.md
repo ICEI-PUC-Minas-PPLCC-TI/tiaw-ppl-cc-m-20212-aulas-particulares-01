@@ -6,7 +6,7 @@
 
 O padrão de layout a ser utilizado pelo site tem correspondência ao projeto de Interface elaborado anteriormente no figma que pode ser visualizado [aqui](https://github.com/ICEI-PUC-Minas-PPLCC-TI/tiaw-ppl-cc-m-20212-aulas-particulares-01/blob/master/Documentacao/02-ProjetoDaSolu%C3%A7%C3%A3o/03-Wireframes.md)
 
-O template criado está disponível no site _______  e é composto pelos seguintes layouts: 
+O template criado está disponível nesse [site](https://simplinsino.fernandamendes1.repl.co/index.html), e é composto pelos seguintes layouts: 
 - Tela principal
 - Página das disciplinas
 - Página dos cursos
