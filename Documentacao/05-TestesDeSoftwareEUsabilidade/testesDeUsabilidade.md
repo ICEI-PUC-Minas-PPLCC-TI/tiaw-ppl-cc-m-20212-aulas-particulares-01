@@ -29,3 +29,7 @@ Dentre as pessoas que testaram o Simplinsino estão:
 - O cadastro do parceiro não é realizado de fato, com email enviado para aqueles que desejam disponibilizar seu conteúdo na plataforma
 - O cadastro de parceiros não é seguro 
 - Mostrar comentários por vídeo e quais são os cursos mais populares
+
+## OBS: Relatório feito por Álvaro 
+
+Relatório pode ser encointrado [aqui](https://github.com/ICEI-PUC-Minas-PPLCC-TI/tiaw-ppl-cc-m-20212-aulas-particulares-01/blob/master/Documentacao/05-TestesDeSoftwareEUsabilidade/simplinsino%20-%20relatorio.docx)
