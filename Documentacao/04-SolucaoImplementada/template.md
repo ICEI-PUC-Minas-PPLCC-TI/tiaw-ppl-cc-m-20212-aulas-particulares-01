@@ -55,16 +55,18 @@ Página que oferece dicas de como estudar e organizar os estudos
 
 ## Página de cadastro
 
+
 Página onde é possível fazer o cadastro de alunos
 
-![cadastro](https://user-images.githubusercontent.com/89420917/145126764-e52557cf-d966-48ae-b07b-0808d68a9a13.png)
+![imgCadastro](https://user-images.githubusercontent.com/86014843/146023278-c0ab7b28-8be3-46a7-b92e-92326b0c8d87.jpeg)
 
 
 ## Página de parceiros
 
 Página onde é possível fazer o cadastro de professores parceiros
 
-![parceiro](https://user-images.githubusercontent.com/89420917/145126829-f67c6dcb-e7d1-48df-a2cb-0fa6919ffcbd.png)
+
+![imgParceiro](https://user-images.githubusercontent.com/86014843/146023428-728b6ae4-0109-4c4b-9294-e1d7d6314fd3.jpeg)
 
 
 ## Página de edição de perfil
