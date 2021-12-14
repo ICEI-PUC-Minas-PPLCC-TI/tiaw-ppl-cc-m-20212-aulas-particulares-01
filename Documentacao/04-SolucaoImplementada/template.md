@@ -80,7 +80,8 @@ Página onde é possível fazer o cadastro de professores parceiros
 Página que exibe os cursos salvos pelo usuário
 
 
-![imgTarefas](https://user-images.githubusercontent.com/86014843/146027020-3de17772-93a7-43c3-bc2b-df124eac3755.jpeg)
+![imgMeusCursos](https://user-images.githubusercontent.com/86014843/146026991-9aebaaec-b9b9-4519-92d7-7d4aece2f09c.jpeg)
+
 
 
 
@@ -88,7 +89,6 @@ Página que exibe os cursos salvos pelo usuário
 
 Local onde o usuário consegue cadastrar o que precisa estudar e a prioridade da tarefa criada. As cores seguem a prioridade da tarefa: vermelho prioridade alta, laranja média e verde baixa. 
 
-![imgMeusCursos](https://user-images.githubusercontent.com/86014843/146026991-9aebaaec-b9b9-4519-92d7-7d4aece2f09c.jpeg)
-
+![imgTarefas](https://user-images.githubusercontent.com/86014843/146027020-3de17772-93a7-43c3-bc2b-df124eac3755.jpeg)
 
 
