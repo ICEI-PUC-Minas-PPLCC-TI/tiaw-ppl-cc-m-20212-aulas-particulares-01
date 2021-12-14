@@ -31,7 +31,8 @@ Página que abrange todas a visualização inicial do site
 
 Página onde o usuário pode escolher um curso ou acessar um link de pesquisa verificado
 
-![disciplina](https://user-images.githubusercontent.com/89420917/145312228-57eaa37f-f204-443a-88b7-fa16f1fe7e2d.png)
+![imgDisciplina](https://user-images.githubusercontent.com/86014843/146026863-4f4a54bd-72dc-4020-ac32-776bcbb91ca9.jpeg)
+
 
 ## Página dos cursos
 
@@ -71,14 +72,15 @@ Página onde é possível fazer o cadastro de professores parceiros
 
 ## Página de edição de perfil
 
-![edicao-perfil](https://user-images.githubusercontent.com/89420917/145648974-760483fe-f6a2-463d-8a2d-7cba283b201f.png)
+![imgEditarPerfil](https://user-images.githubusercontent.com/86014843/146026938-00f6e6af-e837-49ba-b714-d1d6241c03ee.jpeg)
 
 
 ## Página dos cursos salvos pelo usuário
 
 Página que exibe os cursos salvos pelo usuário
 
-![csalvos](https://user-images.githubusercontent.com/89420917/145501361-6c0c6e27-c40a-407b-a39b-7a4a02a31a65.png)
+
+![imgTarefas](https://user-images.githubusercontent.com/86014843/146027020-3de17772-93a7-43c3-bc2b-df124eac3755.jpeg)
 
 
 
@@ -86,6 +88,7 @@ Página que exibe os cursos salvos pelo usuário
 
 Local onde o usuário consegue cadastrar o que precisa estudar e a prioridade da tarefa criada. As cores seguem a prioridade da tarefa: vermelho prioridade alta, laranja média e verde baixa. 
 
-![tarefas](https://user-images.githubusercontent.com/89420917/145126806-3c26698d-fdc4-41ab-8d1c-77580a666341.png)
+![imgMeusCursos](https://user-images.githubusercontent.com/86014843/146026991-9aebaaec-b9b9-4519-92d7-7d4aece2f09c.jpeg)
+
 
 
